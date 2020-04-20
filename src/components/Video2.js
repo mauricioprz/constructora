@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import remconvideo from "../assets/video/remconvideo.webm";
+// import remconvideo from "../assets/video/remconvideo.webm";
 import "../assets/css/video.css";
 
 export default class Video extends Component {
   render() {
     return (
       <video loop autoPlay muted width="100%" height="100%" loop autoPlay>
-        <source src={remconvideo} />
+        {/* <source src={remconvideo} /> */}
       </video>
     );
   }
