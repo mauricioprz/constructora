@@ -1,0 +1,39 @@
+.logo-rem {
+  width: 14%;
+  height: 100%;
+}
+
+.navbar {
+  width: 100vw;
+  height: 10vh;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #c4c4c4;
+}
+
+.fondo-logo {
+  width: 5vw;
+  height: 9vh;
+}
+
+.logo {
+  width: 13vw;
+  height: 23vh;
+  margin-right: 60px;
+}
+
+/* .navbar-custom .nav-item.active .nav-link {
+    color:#203746;
+} */
+/* .nav-link {
+  color: black, !important;
+} */
+.nav-item {
+  margin-left: 25px;
+}
+
+.navbar-brand {
+  width: auto;
+  height: 100%;
+
+}

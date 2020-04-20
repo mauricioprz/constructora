@@ -1,0 +1,63 @@
+       .marco {
+     display: flex;
+     width: 95%;
+     height: 90%;
+     border: 1px solid rgb(216, 84, 84);
+
+}
+
+.start-left {
+     margin-right: 25px;
+     width: 60%;
+     height: 100%;
+     border: 3px solid rgb(113, 138, 219);
+}
+
+.imagen-left {
+     width: 100%;
+     height: 100%;
+     margin: 0;     
+}
+
+.start-right {
+     width: 40%;
+     height: 100%;
+     border: 1px solid rgb(83, 143, 65);
+}
+
+.bienvenidos {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+     background-color: #c4c4c4;
+     
+     font-size: 1em;
+     width: 100%;
+     height: 45%;
+     padding: 20px;
+     
+}
+
+.link {
+     width: 100%;
+     height: 55%;
+     padding-top: 5%;
+}
+
+.imagen-left {
+     width: 100%;
+     height: 100%;
+}
+
+h3 {
+     text-align: justify;
+     padding: 10px;
+     font-family: 'fuente2';
+     font-size: 2vmin;
+     
+}
+
+h1 {
+     font-family: 'fuente1';
+}

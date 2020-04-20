@@ -1,0 +1,26 @@
+.tarjetas1 {
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.servicios {
+     display: flex;
+     margin: 2rem;
+     width: 35vw;
+     height: 35vh;
+}
+
+
+
+.funciones {
+     display: flex;
+     flex-direction: column;
+     margin: 2rem;
+     width: 35vw;
+     height: 35vh;
+}
+
+.funciones li  {
+     color: white;
+     margin-top: .5rem;
+}

@@ -1,0 +1,69 @@
+.pie {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  background-color: #c4c4c4;
+  width: 100vw;
+  height: 10vh;
+}
+
+.aviso {
+  display: flex;
+  width: 33.33%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.aviso p {
+  margin: 0;
+}
+
+.icon-social {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-facebook {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.logo-twitter {
+  display: flex;
+  margin-top: 0;
+  width: 33px;
+  height: 35px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.logo-instagram {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  margin-left: 8px;
+  margin-right: 6px;
+}
+.logo-youtube {
+  display: flex;
+  width: 46px;
+  height: 40px;
+  margin-left: 6px;
+  margin-right: 8px;
+}
+
+.correo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+}
+
+.correo p {
+  margin: 0;
+}

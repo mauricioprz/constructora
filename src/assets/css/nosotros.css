@@ -1,0 +1,131 @@
+.fondo-blur {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.marco-nosotros {
+  position: absolute;
+  width: 95%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+.cascostest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.marco-casco {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 33.3%;
+  height: 72%;
+  align-self: flex-end;
+}
+
+.marco-casco2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  height: 85%;
+  align-self: baseline;
+}
+
+.tamaño {
+  position: absolute;
+  display: flex;
+  width: 95%;
+  height: 100%;
+}
+.tamaño2 {
+  position: absolute;
+  display: flex;
+  width: 90%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.casco-txt {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 80%;
+}
+
+.title-casco {
+  display: flex;
+  position: relative;
+  color: black;
+  width: 60%;
+  align-self: center;
+  margin-top: 5px;
+  text-decoration: underline;
+}
+
+.comentarios {
+  display: flex;
+  padding-top: 30px;
+  line-height: 19px;
+  width: 45%;
+  height: 100%;
+  position: absolute;
+  color: black;
+  font-family: "fuente3";
+}
+
+
+
+.title-casco2 {
+     display: flex;
+     position: relative;
+     color: black;
+     /* width: 60%; */
+     align-self: center;
+     margin-top: 5px;
+     text-decoration: underline;
+     margin-top: 15px;
+   }
+   
+   .comentarios2 {
+     display: flex;
+     padding-top: 60px;
+     line-height: 20px;
+     width: 55%;
+     height: 100%;
+     position: absolute;
+     color: black;
+     font-family: "fuente3";
+     margin-left: 15px;
+   }
+
+   .title-casco3 {
+     display: flex;
+     position: relative;
+     color: black;
+     width: 30%;
+     align-self: center;
+     margin-top: 5px;
+     text-decoration: underline;
+     margin-top: 15px;
+     
+   }
+   
+   .comentarios3 {
+     display: flex;
+     flex-direction: column;
+     padding-top: 40px;
+     line-height: 19px;
+     width: 55%;
+     height: 100%;
+     position: absolute;
+     color: black;
+     font-family: "fuente3";
+     margin-left: 10px;
+   }
