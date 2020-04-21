@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import "../assets/css/contacto.css";
-import MyMapComponent from "./Ubicacion";
+import MyMapComponent from "./Map";
 import Formulario from "./Formulario";
+import credentials from './credentials'
 
+const mapURL = "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAk4HnTdCHwp2CMcTLt7szHJdPZmrqVtIs"
 export default class Contacto extends Component {
   render() {
     return (
@@ -11,7 +13,7 @@ export default class Contacto extends Component {
           <div className="contac-left">
             <MyMapComponent
               isMarkerShown
-              googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+              googleMapURL= {mapURL}
               loadingElement={<div style={{ height: `100%` }} />}
               containerElement={<div style={{ height: `100%` }} />}
               mapElement={<div style={{ height: `100%` }} />}

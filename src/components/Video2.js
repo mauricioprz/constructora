@@ -5,7 +5,7 @@ import "../assets/css/video.css";
 export default class Video extends Component {
   render() {
     return (
-      <video loop autoPlay muted width="100%" height="100%" loop autoPlay>
+      <video loop autoPlay muted width="100%" height="100%" >
         {/* <source src={remconvideo} /> */}
       </video>
     );

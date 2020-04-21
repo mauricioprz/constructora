@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../assets/css/proyectos.css";
 import "../assets/css/background.css";
 import Foto1 from "../assets/images/antesydespues.jpg";
-import { Modal, Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 
 export default class Proyectos extends Component {
   state = {
@@ -15,7 +15,7 @@ export default class Proyectos extends Component {
     console.log(e);
     console.log(data);
     console.log("se hizo click");
-    this.setState({ show: true, Mtitle: "Mi carro", img: data });
+    this.setState({ show: true, Mtitle: "Casa en Interlomas", img: data });
   };
 
   handleClose = () => {
@@ -28,9 +28,12 @@ export default class Proyectos extends Component {
         <div className="marco-project">
           <div className="images-project">
             <div className="imagen0">
-              <a href="#" onClick={this.clickHandler}>
-                <img className="test" src={Foto1}></img>
-              </a>
+            <img
+                onClick={this.clickHandler.bind(this, Foto1)}
+                className="test"
+                src={Foto1}
+                alt="Foto de Antes y despues 1"
+              ></img>
             </div>
             <div className="imagen0">
               <img
@@ -41,38 +44,37 @@ export default class Proyectos extends Component {
               ></img>
             </div>
             <div className="imagen0">
-              <img
+            <img
+                onClick={this.clickHandler.bind(this, Foto1)}
                 className="test"
                 src={Foto1}
-                alt="Foto de Antes y despues 3"
+                alt="Foto de Antes y despues 2"
               ></img>
             </div>
             <div className="imagen0">
               <img
+                onClick={this.clickHandler.bind(this, Foto1)}
                 className="test"
                 src={Foto1}
-                alt="Foto de Antes y despues 4"
+                alt="Foto de Antes y despues 2"
               ></img>
             </div>
           </div>
         </div>
 
-        <Modal
+        <Modal 
+          size="lg"
           show={this.state.show}
           onHide={this.handleClose}
           animation={false}
+          
         >
           <Modal.Header closeButton>
-            <Modal.Title>{this.state.Mtitle}</Modal.Title>
+            <Modal.Title >{this.state.Mtitle}</Modal.Title>
           </Modal.Header>
-          <Modal.Body>data</Modal.Body>
+    <Modal.Body  ><img   style={{maxWidth: '100%'}} src={Foto1} alt="projects" /></Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={this.handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={this.handleClose}>
-              Save Changes
-            </Button>
+            
           </Modal.Footer>
         </Modal>
       </div>

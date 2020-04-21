@@ -68,7 +68,8 @@
 // }
 
 import React, { Component } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 import "../assets/css/navegacion.css";
 import Logo from "../assets/images/remcon3.png";
@@ -96,71 +97,75 @@ class Nav extends Component {
       ? "navbar-toggler navbar-toggler-right collapsed"
       : "navbar-toggler navbar-toggler-right";
     return (
-      <nav className="navbar navbar-expand-lg navbar-light">
-        <Link className="logo-rem" to="/">
-          <img
-            className=" navbar-brand"
-            src={Logo}
-            alt="logo-remcon"
-            height="120px"
-          />
-        </Link>
+     
 
-        {/* <a className="navbar-brand" href="/">
-             <img src={Logo} alt="Logo"/>
-           </a> */}
+      <nav className="navbar navbar-expand-lg navbar-light" >
+       
+          <Link className="logo-rem" to="/">
+            <img
+              className=" navbar-brand"
+              src={Logo}
+              alt="logo-remcon"
+              height="120px"
+            />
+          </Link>
+          
 
-        <button
-          onClick={this.toggleNavbar}
-          className={`${classTwo}`}
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className={`${classOne}`} id="navbarResponsive">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
-              <NavLink className="nav-link" to="/" activeClassName="active">
-                Inicio
-              </NavLink>
-            </li>
-            <li className="nav-item active">
-              <Link className="nav-link" to="/nosotros">
-                Nosotros
-              </Link>
-            </li>
-            <li className="nav-item active">
-              <Link className="nav-link" to="/servicios">
-                Servicios
-              </Link>
-            </li>
-            <li className="nav-item active">
-              <Link className="nav-link" to="/proyectos">
-                Proyectos
-              </Link>
-            </li>
-            <li className="nav-item active">
-              <Link className="nav-link" to="/galeria">
-                Galeria
-              </Link>
-            </li>
-            <li className="nav-item active">
-              <Link className="nav-link" to="/empresaunida">
-                Empresa unida
-              </Link>
-            </li>
-            <li className="nav-item active">
-              <Link className="nav-link navbar-text" to="/contacto">
-                Contacto
-              </Link>
-            </li>
-          </ul>
-        </div>
+
+          <button
+            onClick={this.toggleNavbar}
+            className={`${classTwo}`}
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon" />
+          </button>
+          <div className={`${classOne}`} id="navbarResponsive">
+
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item active">
+                <Link className="nav-link" to="/">
+                  Inicio
+                </Link>
+              </li>
+              <li className="nav-item active">
+                <Link className="nav-link" to="/nosotros">
+                  Nosotros
+                </Link>
+              </li>
+              <li className="nav-item active">
+                <Link className="nav-link" to="/servicios">
+                  Servicios
+                </Link>
+              </li>
+              <li className="nav-item active">
+                <Link className="nav-link" to="/proyectos">
+                  Proyectos
+                </Link>
+              </li>
+              <li className="nav-item active">
+                <Link className="nav-link" to="/galeria">
+                  Galeria
+                </Link>
+              </li>
+              <li className="nav-item active">
+                <Link className="nav-link" to="/empresaunida">
+                  Empresa unida
+                </Link>
+              </li>
+              <li className="nav-item active">
+                <Link className="nav-link navbar-text" to="/contacto">
+                  Contacto
+                </Link>
+              </li>
+            </ul>
+            
+          </div>
+        
       </nav>
     );
   }

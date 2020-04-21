@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../assets/css/inicio.css";
 import '../assets/css/background.css';
-//import Foto1 from "../assets/images/inicio/FOTOS CON GOTA DE AGUA.jpg";
+// import Foto1 from "../assets/images/inicio/FOTOS CON GOTA DE AGUA.jpg";
 import Foto2 from "../assets/images/antesydespues.jpg";
 import VideoInicio from "./Video1";
 
