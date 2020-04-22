@@ -1,74 +1,6 @@
-// import React, { Component } from "react";
-// import { Link } from "react-router-dom";
-
-// import "../assets/css/navegacion.css";
-// import Logo from "../assets/images/remcon.png";
-
-// export default class Navegacion extends Component {
-//   render() {
-//     return (
-//       <nav class="navbar navbar-expand-lg navbar-light">
-//               <Link to="/">
-//         <img className=" nav-brand" src={Logo} alt="logo-remcon" height="120px" />
-//         </Link>
-
-//       <button
-//          class="navbar-toggler"
-//           type="button"
-//          data-toggle="collapse"
-//           data-target="#menu"
-//           // aria-controls="navbarNav"
-//           // aria-expanded="false"
-//           // aria-label="Toggle navigation"
-//         >
-//           <span class="navbar-toggler-icon"></span>
-//         </button>
-//         <div class="collapse navbar-collapse justify-content-center " id="menu">
-//           <ul class="navbar-nav ml-auto">
-//             <li className="nav-item active">
-//               <Link className="nav-link" to="/">
-//                 Inicio
-//               </Link>
-//             </li>
-//             <li className="nav-item active">
-//               <Link className="nav-link" to="/nosotros">
-//                 Nosotros
-//               </Link>
-//             </li>
-//             <li className="nav-item active">
-//               <Link className="nav-link" to="/servicios">
-//                 Servicios
-//               </Link>
-//             </li>
-//             <li className="nav-item active">
-//               <Link className="nav-link" to="/proyectos">
-//                 Proyectos
-//               </Link>
-//             </li>
-//             <li className="nav-item active">
-//               <Link className="nav-link" to="/galeria">
-//                 Galeria
-//               </Link>
-//             </li>
-//             <li className="nav-item active">
-//               <Link className="nav-link" to="/empresaunida">
-//                 Empresa Unida
-//               </Link>
-//             </li>
-//             <li className="nav-item active">
-//               <Link className="nav-link" to="/contacto">
-//                 Contacto
-//               </Link>
-//             </li>
-//           </ul>
-//         </div>
-//       </nav>
-//     );
-//   }
-// }
-
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 
 import "../assets/css/navegacion.css";
@@ -101,14 +33,14 @@ class Nav extends Component {
 
       <nav className="navbar navbar-expand-lg navbar-light" >
        
-          <Link className="logo-rem" to="/">
+          <NavLink className="logo-rem" to="/">
             <img
               className=" navbar-brand"
               src={Logo}
               alt="logo-remcon"
               height="120px"
             />
-          </Link>
+          </NavLink>
           
 
 
@@ -128,39 +60,39 @@ class Nav extends Component {
 
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
-                <Link className="nav-link" to="/">
+                <NavLink activeClassName="nav-link" exact to="/">
                   Inicio
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item active">
-                <Link className="nav-link" to="/nosotros">
+                <NavLink activeClassName="nav-link" to="/nosotros">
                   Nosotros
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item active">
-                <Link className="nav-link" to="/servicios">
+                <NavLink activeClassName="nav-link" to="/servicios">
                   Servicios
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item active">
-                <Link className="nav-link" to="/proyectos">
+                <NavLink activeClassName="nav-link" to="/proyectos">
                   Proyectos
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item active">
-                <Link className="nav-link" to="/galeria">
+                <NavLink activeClassName="nav-link" to="/galeria">
                   Galeria
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item active">
-                <Link className="nav-link" to="/empresaunida">
+                <NavLink activeClassName="nav-link" to="/empresaunida">
                   Empresa unida
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item active">
-                <Link className="nav-link navbar-text" to="/contacto">
+                <NavLink activeClassName="nav-link" to="/contacto">
                   Contacto
-                </Link>
+                </NavLink>
               </li>
             </ul>
             

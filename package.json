@@ -7,6 +7,8 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
+    "emailjs-com": "^2.4.1",
+    "firebase": "^7.14.1",
     "flexbox-react": "^4.4.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
@@ -18,6 +20,7 @@
     "react-responsive": "^8.0.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "reactfire": "^2.0.0-alpha.3",
     "webfontloader": "^1.6.28"
   },
   "scripts": {

@@ -18,6 +18,9 @@ export default class Proyectos extends Component {
     this.setState({ show: true, Mtitle: "Casa en Interlomas", img: data });
   };
 
+  
+  
+
   handleClose = () => {
     this.setState({ show: false });
   };
@@ -33,6 +36,7 @@ export default class Proyectos extends Component {
                 className="test"
                 src={Foto1}
                 alt="Foto de Antes y despues 1"
+                id="click1"
               ></img>
             </div>
             <div className="imagen0">
@@ -41,6 +45,7 @@ export default class Proyectos extends Component {
                 className="test"
                 src={Foto1}
                 alt="Foto de Antes y despues 2"
+                
               ></img>
             </div>
             <div className="imagen0">
