@@ -12,8 +12,8 @@ export default class Inicio extends Component {
       <div className="background">
         <div className="marco">
           <div className="start-left">
-            <div className="video2">
-              <VideoInicio/>
+            <div className="video2" id="videoIn">
+              <VideoInicio video="#videoIn" />
             </div>
           </div>
           <div className="start-right">
@@ -34,20 +34,9 @@ export default class Inicio extends Component {
               </div>
             </div>
             <div className="link">
-
-
-
-            <Link  to="/Proyectos">
-            <img className="imagen-left"
-              
-              src={Foto2}
-              alt="a proyectos"
-            
-            />
-          </Link>
-
-
-
+              <Link to="/Proyectos">
+                <img className="imagen-left" src={Foto2} alt="a proyectos" />
+              </Link>
             </div>
           </div>
         </div>
