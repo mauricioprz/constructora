@@ -21,9 +21,6 @@ export default class Proyectos extends Component {
     this.setState({ show: true, Mtitle: "Casa en Interlomas", img: data });
   };
 
-  
-  
-
   handleClose = () => {
     this.setState({ show: false });
   };
@@ -80,9 +77,8 @@ export default class Proyectos extends Component {
           <Modal.Header closeButton>
             <Modal.Title >{this.state.Mtitle}</Modal.Title>
           </Modal.Header>
-    <Modal.Body  ><img   style={{maxWidth: '100%'}} src={Antesydespues5} alt="projects" /></Modal.Body>
+    <Modal.Body><img   style={{maxWidth: '100%'}} src={Antesydespues5} alt="projects" /></Modal.Body>
           <Modal.Footer>
-            
           </Modal.Footer>
         </Modal>
       </div>
