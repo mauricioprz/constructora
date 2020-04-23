@@ -42,3 +42,7 @@
   width: 100%;
   max-height: 100%
 }
+
+.modal-lg {
+     width: 65% ;
+}

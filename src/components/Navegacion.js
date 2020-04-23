@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-//import { Link } from "react-router-dom";
-
-
 import "../assets/css/navegacion.css";
-import Logo from "../assets/images/remcon3.png";
-// import Inicio from "./Inicio";
+import Logo from "../assets/images/logo.png";
 
 class Nav extends Component {
   constructor(props) {

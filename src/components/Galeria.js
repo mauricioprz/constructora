@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "../assets/css/galeria.css";
-import ImagesConstrucciones from "../assets/images/antesydespues.jpg";
-import ImagesProyectosEspeciales from "../assets/images/edificio.jpg";
-import ImagesRemodelaciones from "../assets/images/concreto.jpg";
+import ImagesConstrucciones from "../assets/images/galeria/imagen-galeria1.jpg";
+import ImagesProyectosEspeciales from "../assets/images/galeria/imagen-galeria2.jpg";
+import ImagesRemodelaciones from "../assets/images/galeria/imagen-galeria3.jpg";
 
 import Video from "./Video2";
 import "../assets/css/video.css";
@@ -66,7 +66,7 @@ export default class Galeria extends Component {
           </div>
         </div>
         <Modal 
-          size="lg"
+          size="md"
           show={this.state.show}
           onHide={this.handleClose}
           animation={false}

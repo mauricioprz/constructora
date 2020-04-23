@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "../assets/css/inicio.css";
 import "../assets/css/background.css";
-//import Foto1 from "../assets/images/inicio/FOTOS CON GOTA DE AGUA.jpg";
-import Foto2 from "../assets/images/antesydespues.jpg";
+import Imagen_antesydespues1 from "../assets/images/inicio/antesydespues1.jpg";
 import VideoInicio from "./Video1";
 import { Link } from "react-router-dom";
 
@@ -35,7 +34,7 @@ export default class Inicio extends Component {
             </div>
             <div className="link">
               <Link to="/Proyectos">
-                <img className="imagen-left" src={Foto2} alt="a proyectos" />
+                <img className="imagen-left" src={Imagen_antesydespues1} alt="a proyectos" />
               </Link>
             </div>
           </div>

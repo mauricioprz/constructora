@@ -11,12 +11,12 @@ export default class Video extends Component {
   };
 
   clickHandler = (e, data) => {
-    e.currentTarget.video.pause();
+    //e.currentTarget.video.pause();
     this.setState({ show: true, autoPlay: true });
   };
 
   handleClose = (e) => {
-    document.querySelector(this.props.video).play();
+    //document.querySelector(this.props.video).play();
     this.setState({ show: false });
   };
 
@@ -39,9 +39,7 @@ export default class Video extends Component {
           onHide={this.handleClose}
           animation={false}
         >
-          <Modal.Header>
-            <Modal.Title></Modal.Title>
-          </Modal.Header>
+          
           <Modal.Body>
             <video
               width="100%"

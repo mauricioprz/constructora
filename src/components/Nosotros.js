@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Fotonosotros from "../assets/images/nosotros/de_noche.jpg";
+import Imagen_background from "../assets/images/nosotros/nosotros-toma1.jpg";
 import "../assets/css/nosotros.css";
 import "../assets/css/inicio.css";
 import Cascos from './Cascos'
@@ -9,7 +9,7 @@ export default class Nosotros extends Component {
     return (
       <div className="background">
         
-        <img className="fondo-blur" src={Fotonosotros} alt="Foto de nosotros"></img>
+        <img className="imagen_de_noche" src={Imagen_background} alt="Imagen de fondo"></img>
           <div className="marco-nosotros">
             
             <Cascos/>

@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-//import Tarjetas from './Tarjetas';
 import "../assets/css/background.css";
 import "../assets/css/servicios.css";
-import Fotoservicios from "../assets/images/concreto.jpg";
+import Imagen_Remodelacion from "../assets/images/servicios/servicios1.jpg";
+import Imagen_Diseño from "../assets/images/servicios/servicios2.jpg";
+import Imagen_Planeacion from "../assets/images/servicios/servicios3.jpg";
+import Imagen_Construccion from "../assets/images/servicios/servicios4.jpg";
 import Listado from "./listado";
 export default class Servicios extends Component {
   state = {
@@ -12,7 +14,7 @@ export default class Servicios extends Component {
         "Naves industriales",
         "Centros de distribución",
       ],
-      img: Fotoservicios,
+      img: Imagen_Construccion,
     },
   };
 
@@ -27,7 +29,7 @@ export default class Servicios extends Component {
                 <h5>Diseño</h5>
                 <img
                   className="imagen-left"
-                  src={Fotoservicios}
+                  src={Imagen_Diseño}
                   alt="Imagen de Diseño"
                 ></img>
               </div>
@@ -45,7 +47,7 @@ export default class Servicios extends Component {
                 <h5>Planeacion</h5>
                 <img
                   className="imagen-left"
-                  src={Fotoservicios}
+                  src={Imagen_Planeacion}
                   alt="Imagen de Planeacion"
                 ></img>
               </div>
@@ -65,7 +67,7 @@ export default class Servicios extends Component {
                 <h5>Construccion</h5>
                 <img
                   className="imagen-left"
-                  src={Fotoservicios}
+                  src={Imagen_Construccion}
                   alt="Imagen de Construccion"
                 ></img>
               </div>

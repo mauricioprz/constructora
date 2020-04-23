@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import CascoIzquierdo from '../assets/images/casco1.png'
-import CascoCentral from '../assets/images/nuevo2.png'
+import CascoCentral from '../assets/images/casco2.png'
 import CascoDerecho from '../assets/images/casco3.png'
 import "../assets/css/nosotros.css";
 
@@ -8,7 +8,7 @@ import "../assets/css/nosotros.css";
 export default class Cascos extends Component {
      render() {
           return (
-               <div className="cascostest">
+               <div className="cascos_container">
                     <div className="marco-casco">
 
                    <img className="tamaño" src={CascoIzquierdo} alt="Imagen de casco"/> 
