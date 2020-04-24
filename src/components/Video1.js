@@ -11,12 +11,12 @@ export default class Video extends Component {
   };
 
   clickHandler = (e, data) => {
-    //e.currentTarget.video.pause();
+    data.currentTarget.pause();
     this.setState({ show: true, autoPlay: true });
   };
 
   handleClose = (e) => {
-    //document.querySelector(this.props.video).play();
+    document.getElementById(this.props.video).play();
     this.setState({ show: false });
   };
 
@@ -26,11 +26,13 @@ export default class Video extends Component {
         <video
           onClick={this.clickHandler.bind(this, videoinicio)}
           loop
-          //autoPlay
+          autoPlay
           muted
           width="100%"
           height="100%"
           src={videoinicio}
+          type="video/webm"
+          id={this.props.video}
         ></video>
 
         <Modal
@@ -39,12 +41,12 @@ export default class Video extends Component {
           onHide={this.handleClose}
           animation={false}
         >
-          
           <Modal.Body>
             <video
               width="100%"
               height="100%"
               autoPlay
+              muted
               src={videoinicio}
             ></video>
           </Modal.Body>

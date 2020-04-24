@@ -8,20 +8,19 @@ import Video from "./Video2";
 import "../assets/css/video.css";
 import { Modal } from "react-bootstrap";
 export default class Galeria extends Component {
-     state = {
-          show: false,
-          Mtitle: "Casa",
-          img: "",
-        };
+  state = {
+    show: false,
+    Mtitle: "Casa",
+    img: "",
+  };
 
-        clickHandler = () => {
-          this.setState({ show: true, Mtitle: true });
-          
-        };
+  clickHandler = (img, e) => {
+    this.setState({ show: true, Mtitle: true, img: img });
+  };
 
-        handleClose = () => {
-          this.setState({ show: false });
-        };
+  handleClose = () => {
+    this.setState({ show: false });
+  };
 
   render() {
     return (
@@ -36,7 +35,7 @@ export default class Galeria extends Component {
             <div className="row-galeria">
               <h5>Construcciones</h5>
               <img
-              onClick={this.clickHandler.bind(this, ImagesConstrucciones)}
+                onClick={this.clickHandler.bind(this, ImagesConstrucciones)}
                 className="imagen-galeria"
                 src={ImagesConstrucciones}
                 alt="Video Remcon"
@@ -46,7 +45,10 @@ export default class Galeria extends Component {
             <div className="row-galeria">
               <h5>Proyectos Especiales</h5>
               <img
-              onClick={this.clickHandler.bind(this, ImagesConstrucciones)}
+                onClick={this.clickHandler.bind(
+                  this,
+                  ImagesProyectosEspeciales
+                )}
                 className="imagen-galeria"
                 src={ImagesProyectosEspeciales}
                 alt="Video Remcon"
@@ -56,7 +58,7 @@ export default class Galeria extends Component {
             <div className="row-galeria">
               <h5>Remodelaciones</h5>
               <img
-              onClick={this.clickHandler.bind(this, ImagesConstrucciones)}
+                onClick={this.clickHandler.bind(this, ImagesRemodelaciones)}
                 className="imagen-galeria"
                 src={ImagesRemodelaciones}
                 alt="Video Remcon"
@@ -65,22 +67,24 @@ export default class Galeria extends Component {
             </div>
           </div>
         </div>
-        <Modal 
+        <Modal
           size="md"
           show={this.state.show}
           onHide={this.handleClose}
           animation={false}
-          
         >
           <Modal.Header closeButton>
-            <Modal.Title >{this.state.Mtitle}</Modal.Title>
+            <Modal.Title>{this.state.Mtitle}</Modal.Title>
           </Modal.Header>
-    <Modal.Body  ><img   style={{maxWidth: '100%'}} src={ImagesConstrucciones} alt="projects" /></Modal.Body>
-          <Modal.Footer>
-            
-          </Modal.Footer>
+          <Modal.Body>
+            <img
+              style={{ maxWidth: "100%" }}
+              src={this.state.img}
+              alt="projects"
+            />
+          </Modal.Body>
+          <Modal.Footer></Modal.Footer>
         </Modal>
-      
       </div>
     );
   }

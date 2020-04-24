@@ -3,7 +3,7 @@ import "../assets/css/background.css";
 import "../assets/css/servicios.css";
 //import Imagen_Remodelacion from "../assets/images/servicios/servicios1.jpg";
 import Imagen_Diseño from "../assets/images/servicios/servicios2.jpg";
-import Imagen_Planeacion from "../assets/images/servicios/servicios3.jpg";
+import Imagen_Planeacion from "../assets/images/servicios/servicios3.JPG";
 import Imagen_Construccion from "../assets/images/servicios/servicios4.jpg";
 import Listado from "./listado";
 export default class Servicios extends Component {
