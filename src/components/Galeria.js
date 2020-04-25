@@ -68,7 +68,7 @@ export default class Galeria extends Component {
           </div>
         </div>
         <Modal
-          size="md"
+          size="lg"
           show={this.state.show}
           onHide={this.handleClose}
           animation={false}

@@ -39,36 +39,7 @@ a {
 button {
   font-size: 2.5vmin;
 }
-/* html {font-size: 100%;}
 
-p {font-size: 1rem;}
-
-h1 {font-size: 3rem;}
-
-h2 {font-size: 2.5 rem;}
-
-h3 {font-size: 2rem;} */
-
-/* @media (max-width: 320px) {
-    body {
-    font-size: .6rem;
-    }
-    }
-
-
-    @media (min-width: 321px) and(max-width: 768px) {
-        body {
-        font-size: .8rem;
-        }
-        }
-
-        @media screen and (max-width: 1024px) {
-            body {
-            font-size: 1.2rem;
-            }
-            }
-
-            */
 @font-face {
   font-family: "fuente1";
   src: url(../fonts/Gotham-Bold_3.otf);

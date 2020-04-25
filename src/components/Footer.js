@@ -65,7 +65,9 @@ export default class Footer extends Component {
         </div>
         <div className="correo">
           <div className="children-correo">
-            <p>@hotmail.com </p>
+
+            <p>remcon07@hotmail.com </p>
+            <p>+52(55) 55962058</p>
           </div>
 
           <Modal

@@ -12,7 +12,7 @@ export default class Video extends Component {
 
   clickHandler = (e, data) => {
     data.currentTarget.pause();
-    this.setState({ show: true, autoPlay: true });
+    this.setState({ show: true, autoPlay: true});
   };
 
   handleClose = (e) => {
@@ -46,7 +46,6 @@ export default class Video extends Component {
               width="100%"
               height="100%"
               autoPlay
-              muted
               src={videoinicio}
             ></video>
           </Modal.Body>
