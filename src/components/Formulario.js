@@ -116,7 +116,7 @@ class Formulario extends Component {
                 className="entrada"
                 type="about"
                 id="message"
-                rows="3"
+                rows="2"
                 placeholder="Mensaje"
                 ref={(message) => (this.textAreaMessage = message)}
               ></textarea>

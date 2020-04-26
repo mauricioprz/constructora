@@ -8,18 +8,21 @@
      display: flex;
      justify-content: center;
      width: 100%;
-     height: 12%;
-     
-     
-     
+     height: 12%;    
 }
 
  .alert-warning{
      height: 100%;
-     width: 75%;
-     
-     
+     width: 75%;    
+     font-size: 2.2vmin;
 }
+
+.alert {
+     height: 100%;
+width: 75%;
+font-size: 2.2vmin;
+}
+
 .marco-formulario {
      width: 100%;
      height: 80%;
@@ -52,6 +55,7 @@
 
 .formato-btn{
      margin: 5px 0;
+     
 }
 
 
@@ -114,5 +118,25 @@ input[type=submit] {
      box-sizing: border-box;
    }
 
+   *::-webkit-input-placeholder {
+     /* Google Chrome y Safari */
+     font-size: 2.2vmin;
+ }
+ *:-moz-placeholder {
+     /* Firefox anterior a 19 */
+     font-size: 2.2vmin;
+ }
+ *::-moz-placeholder {
+     /* Firefox 19 y superior */
+     font-size: 2.2vmin;
+ }
+ *:-ms-input-placeholder {
+     /* Internet Explorer 10 y superior */
+     font-size: 2.2vmin;
+ }
+   
 
+.btn {
+     font-size: 2.2vmin;
+}
    
