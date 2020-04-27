@@ -63,7 +63,26 @@ h1 {
   font-family: "fuente1";
 }
 
-
 .modal-lg {
-  width: 50% ;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .background {
+    height: auto;
+  }
+  .marco {
+    flex-direction: column;
+    width: 100%;
+    height: 62%;
+  }
+  .start-left {
+    width: 100%;
+  }
+  .start-right {
+    width: 100%;
+  }
+  .link {
+    padding: 2px 0 0 0;
+  }
 }

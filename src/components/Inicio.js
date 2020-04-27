@@ -6,9 +6,13 @@ import VideoInicio from "./Video1";
 import { Link } from "react-router-dom";
 
 export default class Inicio extends Component {
+  state = {
+    dclass: "background",
+  };
+
   render() {
     return (
-      <div className="background">
+      <div className={this.state.dclass}>
         <div className="marco">
           <div className="start-left">
             <div className="video2">
