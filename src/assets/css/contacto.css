@@ -3,14 +3,14 @@
      width: 92%;
      height: 90%;
      justify-content: space-evenly;
-     border: 1px solid rgb(216, 84, 84);
+     /* border: 1px solid rgb(216, 84, 84); */
 
 }
 
 .contac-left {
      width: 50%;
      height: 100%;
-     border: 1px solid blue;
+     /* border: 1px solid blue; */
 }
 
 .contac-right {
@@ -19,7 +19,7 @@
     
      width: 40%;
      height: 100%;
-     border: 1px solid pink;
+     /* border: 1px solid pink; */
      background-color: #c4c4c4;
      border-radius: 5px;
 }
@@ -34,7 +34,7 @@
      color:#203746;
      align-items: baseline;
     
-    border: 1px solid yellow;    
+    /* border: 1px solid yellow;     */
 }
 
 .title-contact {
@@ -72,62 +72,10 @@
      height: 65%;
      display: flex;
      flex-direction: column;
-     border: 1px solid red;
+     /* border: 1px solid red; */
      text-align: center;
      
      
 }
 
 
-
-
-
-input[type=text], select {
-     width: 85%;
-     height: auto;
-     /* padding: 12px 20px; */
-     margin: 5px 0;
-     display: inline-block;
-     border: 1px solid #ccc;
-     border-radius: 4px;
-     box-sizing: border-box;
-   }
-
-   input[type=number], select {
-     width: 85%;
-     height: auto;
-     /* padding: 12px 20px; */
-     margin: 5px 0;
-     display: inline-block;
-     border: 1px solid #ccc;
-     border-radius: 4px;
-     box-sizing: border-box;
-   }
-
-   textarea[type=about], select {
-     width: 85%;
-     height: auto;
-     /* padding: 12px 20px; */
-     margin: 5px 0;
-     display: inline-block;
-     border: 1px solid #ccc;
-     border-radius: 4px;
-     box-sizing: border-box;
-   }
-
-input[type=submit] {
-     width: 85%;
-     height: auto;
-     background-color: #4CAF50;
-     color: white;
-     display: inline-block;
-     padding: 10px 20px;
-     margin: 7px 0;
-     border: 1px solid #ccc;
-     border-radius: 4px;
-     cursor: pointer;
-     box-sizing: border-box;
-   }
-
-
-   

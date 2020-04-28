@@ -1,7 +1,142 @@
-.formato {
-     margin-bottom: 1rem;
+.form-principal {
+     width: 100%;
+     height: 100%;
 }
 
-.entrada {
-     width: 90%;
+.alertas {
+     margin: 12px 0 5px 0;
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     height: 12%;    
 }
+
+ .alert-warning{
+     height: 100%;
+     width: 75%;    
+     font-size: 2.2vmin;
+}
+
+.alert {
+     height: 100%;
+width: 75%;
+font-size: 2.2vmin;
+}
+
+.marco-formulario {
+     width: 100%;
+     height: 80%;
+}
+
+.marco-formulario2 {
+     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+     width: 100%;
+     height: 100%;
+}
+
+.formato {
+     width: 100%;
+    height: 10%;
+    margin: 5px 0;
+}
+
+.formato-mensaje {
+     width: 100%;
+    height: 33%;
+    margin-top: 5px;
+    
+}
+/* .entrada {
+     width: 95%;
+     height: 100px;
+} */
+
+.formato-btn{
+     margin: 5px 0;
+     
+}
+
+
+input[type=text], select {
+     width: 75%;
+     height: auto;
+     /* padding: 12px 20px; */
+     /* margin: 5px 0; */
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+   }
+
+   input[type=email], select {
+     width: 75%;
+     height: auto;
+     /* padding: 12px 20px; */
+     /* margin: 5px 0; */
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+   }
+
+   input[type=number], select {
+     width: 75%;
+     height: auto;
+     /* padding: 12px 20px; */
+     /* margin: 5px 0; */
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+   }
+
+   textarea[type=about], select {
+     width: 75%;
+     height: auto;
+     /* padding: 12px 20px; */
+     /* margin: 5px 0; */
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+   }
+
+input[type=submit] {
+     width: 50%;
+     
+     
+     background-color: #4CAF50;
+     color: white;
+     display: inline-block;
+     padding: 10px 20px;
+     /* margin: 7px 0; */
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     cursor: pointer;
+     box-sizing: border-box;
+   }
+
+   *::-webkit-input-placeholder {
+     /* Google Chrome y Safari */
+     font-size: 2.2vmin;
+ }
+ *:-moz-placeholder {
+     /* Firefox anterior a 19 */
+     font-size: 2.2vmin;
+ }
+ *::-moz-placeholder {
+     /* Firefox 19 y superior */
+     font-size: 2.2vmin;
+ }
+ *:-ms-input-placeholder {
+     /* Internet Explorer 10 y superior */
+     font-size: 2.2vmin;
+ }
+   
+
+.btn {
+     font-size: 2.2vmin;
+}
+   

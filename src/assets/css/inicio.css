@@ -2,14 +2,14 @@
   display: flex;
   width: 95%;
   height: 90%;
-  border: 1px solid rgb(216, 84, 84);
+  /* border: 1px solid rgb(216, 84, 84); */
 }
 
 .start-left {
   margin-right: 25px;
   width: 60%;
   height: 100%;
-  border: 3px solid rgb(113, 138, 219);
+  /* border: 3px solid rgb(113, 138, 219); */
 }
 
 .video2 {
@@ -26,7 +26,7 @@
 .start-right {
   width: 40%;
   height: 100%;
-  border: 1px solid rgb(83, 143, 65);
+  /* border: 1px solid rgb(83, 143, 65); */
 }
 
 .bienvenidos {
