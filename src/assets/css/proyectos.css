@@ -1,48 +1,53 @@
 .proyectos-fondo {
-     width: 100vw;
-     height: 80vh;
-     background-color: #1f3646;
+  width: 100vw;
+  height: 80vh;
+  background-color: #1f3646;
 }
 
 .marco-project {
-
-     width: 95vw;
-     height: 75vh;
-     border: 1px solid rgb(216, 84, 84);
-
+  width: 95vw;
+  height: 75vh;
+  border: 1px solid rgb(216, 84, 84);
 }
 .images-project {
-     display: flex;
-    width: 100%;
-    height: 100%;
-     border: 1px solid yellow;
-     flex-wrap: wrap;
-
-     
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid yellow;
+  flex-wrap: wrap;
 }
 
 .imagen0 {
-     display: flex;
-     width: 50%;
-     height: 50%;
-     
+  display: flex;
+  width: 50%;
+  height: 50%;
 }
 
 .test {
-     
-     padding: 15px;
-     width: 100%;
-     height: 100%;
+  padding: 15px;
+  width: 100%;
+  height: 100%;
 }
 
-.img-responsive-ht
-
-{
-  
+.img-responsive-ht {
   width: 100%;
-  max-height: 100%
+  max-height: 100%;
 }
 
 .modal-lg {
-     width: 65% ;
+  width: 65%;
+}
+
+@media (max-width: 768px) {
+  .marco-project {
+    height: auto;
+  }
+  .images-project {
+    flex-wrap: initial;
+    flex-direction: column;
+  }
+
+  .imagen0 {
+    width: 100%;
+  }
 }

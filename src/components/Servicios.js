@@ -24,7 +24,7 @@ export default class Servicios extends Component {
       <div className="background">
         <div className="marco-row">
           <div className="row-up">
-            <div className="row-container">
+            <div className="row-container freverse">
               <div>
                 <h5>Diseño</h5>
                 <img

@@ -24,8 +24,8 @@ export default class Galeria extends Component {
 
   render() {
     return (
-      <div className="background">
-        <div className="marco">
+      <div className="background gback">
+        <div className="marco gmarco">
           <div className="galeria-left">
             <div className="video2">
               <Video />
