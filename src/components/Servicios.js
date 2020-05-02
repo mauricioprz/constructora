@@ -5,7 +5,7 @@ import Imagen_Planeacion from "../assets/images/servicios/servicios1.jpg";
 import Imagen_Proyecto from "../assets/images/servicios/servicios2.jpg";
 import Imagen_Arquitectura from "../assets/images/servicios/servicios3.JPG";
 import Imagen_Construccion from "../assets/images/servicios/servicios4.jpg";
-import Listado from "./Listado";
+import Listado from "./listado";
 
 export default class Servicios extends Component {
   state = {
