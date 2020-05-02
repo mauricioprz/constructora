@@ -4,7 +4,7 @@ import MyMapComponent from "./Map";
 import Formulario from "./Formulario";
 //import credentials from './credentials'
 
-const mapURL = "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key="
+const mapURL = "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyDlyMOgsUJNj2wPVMbtWBWEziw3SVZFRpY"
 export default class Contacto extends Component {
   render() {
     return (

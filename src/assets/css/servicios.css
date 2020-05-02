@@ -9,28 +9,22 @@
 
 .row-container {
   display: flex;
-
   width: 100%;
   height: 100%;
 }
 
 .row-container p {
-  color: cornsilk;
+  color: ivory;
   justify-content: center;
   align-content: center;
+  font-family: "fuente4";
 }
 
 .inv {
   flex-direction: row-reverse;
 }
 
-.row-container ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
+
 .row-container img {
   display: flex;
   justify-content: center;
@@ -45,12 +39,6 @@
   font-family: "fuente4";
 }
 
-.row-container li {
-  /* padding-top: 5px; */
-  color: ivory;
-  font-family: "fuente4";
-}
-
 .row-up {
   display: flex;
   width: 95%;
@@ -60,7 +48,6 @@
 
 .row-down {
   display: flex;
-
   width: 95%;
   height: 45%;
   /* border: 1px solid green; */
@@ -76,7 +63,7 @@
     align-items: center;
   }
 
-  .freverse {
+  .reverse {
     flex-direction: row-reverse;
   }
   .row-up {

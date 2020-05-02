@@ -1,20 +1,25 @@
 import React, { Component } from "react";
+import '../assets/css/listado.css'
 
 export default class Listado extends Component {
   render() {
-    const { texto, img } = this.props;
+    const {title, texto, img } = this.props;
 
     return (
       <div className="row-container">
-        <div>
-          <h5>Diseño</h5>
-          <img className="imagen-left" src={img} alt="Imagen de Diseño"></img>
-        </div>
-        <ul>
-          {texto.map((key) => (
-            <li> {key} </li>
+         <div className="row-containerlistado">
+         {title.map((key) => (
+            <h5> {key} </h5>
           ))}
-        </ul>
+          <img className="imagen-left" src={img} alt="Imagenes"></img>
+        </div>
+        <div className="description">
+        {texto.map((key) => (
+            <p > {key} </p>
+          ))}
+        </div>
+          
+        
       </div>
     );
   }

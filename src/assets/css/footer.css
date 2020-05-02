@@ -28,30 +28,30 @@
 
 .logo-facebook {
   display: flex;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   margin-left: 8px;
   margin-right: 8px;
 }
 .logo-twitter {
   display: flex;
   margin-top: 0;
-  width: 33px;
-  height: 35px;
+  width: 30px;
+  height: 31px;
   margin-left: 8px;
   margin-right: 8px;
 }
 .logo-instagram {
   display: flex;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   margin-left: 8px;
   margin-right: 6px;
 }
 .logo-youtube {
   display: flex;
-  width: 46px;
-  height: 40px;
+  width: 44px;
+  height: 38px;
   margin-left: 6px;
   margin-right: 8px;
 }

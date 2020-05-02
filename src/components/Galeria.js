@@ -1,26 +1,30 @@
 import React, { Component } from "react";
 import "../assets/css/galeria.css";
-import ImagesConstrucciones from "../assets/images/galeria/imagen-galeria1.jpg";
-import ImagesProyectosEspeciales from "../assets/images/galeria/imagen-galeria2.jpg";
-import ImagesRemodelaciones from "../assets/images/galeria/imagen-galeria3.jpg";
+//import { NavLink } from "react-router-dom";
+//import ImagesConstrucciones from "../assets/images/galeria/imagen-galeria1.jpg";
+//import ImagesProyectosEspeciales from "../assets/images/galeria/imagen-galeria2.jpg";
+//import ImagesRemodelaciones from "../assets/images/galeria/imagen-galeria3.jpg";
+import Verificacion from "../assets/images/galeria/palomita.png";
+import { Link } from "react-router-dom";
 
 import Video from "./Video2";
 import "../assets/css/video.css";
 import { Modal } from "react-bootstrap";
+
 export default class Galeria extends Component {
   state = {
-    show: false,
-    Mtitle: "Casa",
-    img: "",
-  };
+   show: false,
+     Mtitle: "Casa",
+     img: "",
+   };
 
-  clickHandler = (img, e) => {
-    this.setState({ show: true, Mtitle: true, img: img });
-  };
+   clickHandler = (img, e) => {
+     this.setState({ show: true, Mtitle: true, img: img });
+   };
 
-  handleClose = () => {
-    this.setState({ show: false });
-  };
+   handleClose = () => {
+     this.setState({ show: false });
+   };
 
   render() {
     return (
@@ -32,7 +36,23 @@ export default class Galeria extends Component {
             </div>
           </div>
           <div className="galeria-right">
-            <div className="row-galeria">
+
+         
+            
+            <Link className="link-galeria" onClick={this.clickHandler.bind(this, )} to="#">
+            <img className="link-img"
+                src={Verificacion}
+                alt="fachadas"
+                height="25px"
+                width="25px"
+                
+              />
+              Fachadas
+            </Link>
+          
+            
+
+            {/* <div className="row-galeria">
               <h5>Construcciones</h5>
               <img
                 onClick={this.clickHandler.bind(this, ImagesConstrucciones)}
@@ -64,7 +84,7 @@ export default class Galeria extends Component {
                 alt="Video Remcon"
                 id={3}
               ></img>
-            </div>
+            </div> */}
           </div>
         </div>
         <Modal

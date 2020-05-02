@@ -42,17 +42,17 @@ button {
 
 @font-face {
   font-family: "fuente1";
-  src: url(../fonts/Gotham-Bold_3.otf);
+  src: url(../fonts/Antonio-Bold.ttf);
 }
 
 @font-face {
   font-family: "fuente2";
-  src: url(../fonts/Gotham-Book_3.otf);
+  src: url(../fonts/Antonio-Light.ttf);
 }
 
 @font-face {
   font-family: "fuente3";
-  src: url(../fonts/Gotham-LightItalic_0.otf);
+  src: url(../fonts/Antonio-Light.ttf);
 }
 
   @font-face {

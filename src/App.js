@@ -1,10 +1,6 @@
 import React from 'react';
-// import {Responsive} from 'react-responsive';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-
-// import logo from './logo.svg';
 import './assets/css/App.css';
-// import './assets/css/fuentes.css'
 
 import Navegacion from './components/Navegacion';
 import Proyectos from './components/Proyectos';

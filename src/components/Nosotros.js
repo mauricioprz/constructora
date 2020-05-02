@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Imagen_background from "../assets/images/nosotros/nosotros-toma1.jpg";
+import Imagen_background from "../assets/images/nosotros/nosotros-toma4.jpg";
 import "../assets/css/nosotros.css";
 import "../assets/css/inicio.css";
 import Cascos from "./Cascos";
