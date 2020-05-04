@@ -18,7 +18,7 @@ export default class Proyectos extends Component {
     console.log(e);
     console.log(data);
     console.log("se hizo click");
-    this.setState({ show: true, Mtitle: "Casa en Interlomas", img: e });
+    this.setState({ show: true, Mtitle: e.title, img: e.img });
   };
 
   handleClose = () => {
@@ -32,7 +32,10 @@ export default class Proyectos extends Component {
           <div className="images-project">
             <div className="imagen0">
               <img
-                onClick={this.clickHandler.bind(this, Antesydespues2)}
+                onClick={this.clickHandler.bind(this, {
+                  img: Antesydespues2,
+                  title: "Edificio Fuente del Rey",
+                })}
                 className="test"
                 src={Antesydespues2}
                 alt="Foto de Antes y despues 1"
@@ -41,7 +44,10 @@ export default class Proyectos extends Component {
             </div>
             <div className="imagen0">
               <img
-                onClick={this.clickHandler.bind(this, Antesydespues3)}
+                onClick={this.clickHandler.bind(this, {
+                  img: Antesydespues3,
+                  title: "Eficio Simon Bolivar",
+                })}
                 className="test"
                 src={Antesydespues3}
                 alt="Foto de Antes y despues 2"
@@ -49,7 +55,10 @@ export default class Proyectos extends Component {
             </div>
             <div className="imagen0">
               <img
-                onClick={this.clickHandler.bind(this, Antesydespues4)}
+                onClick={this.clickHandler.bind(this, {
+                  img: Antesydespues4,
+                  title: "Casa Fuente de acueducto",
+                })}
                 className="test"
                 src={Antesydespues4}
                 alt="Foto de Antes y despues 2"
@@ -57,7 +66,10 @@ export default class Proyectos extends Component {
             </div>
             <div className="imagen0">
               <img
-                onClick={this.clickHandler.bind(this, Antesydespues5)}
+                onClick={this.clickHandler.bind(this, {
+                  img: Antesydespues5,
+                  title: "Casa Fuente de Prometeo",
+                })}
                 className="test"
                 src={Antesydespues5}
                 alt="Foto de Antes y despues 2"

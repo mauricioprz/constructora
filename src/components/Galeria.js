@@ -10,21 +10,29 @@ import { Link } from "react-router-dom";
 import Video from "./Video2";
 import "../assets/css/video.css";
 import { Modal } from "react-bootstrap";
-
+import Carrousel from "./carousel";
+import {
+  configParticlesHome,
+  settingsCarousel_sistemas,
+  settingsCarousel_noticias,
+} from "./controlCarrousel";
+import { imgBaño } from "../assets/images/galeria/baños/baños";
 export default class Galeria extends Component {
   state = {
-   show: false,
-     Mtitle: "Casa",
-     img: "",
-   };
+    show: false,
+    Mtitle: "Casa",
+    img: "",
+  };
 
-   clickHandler = (img, e) => {
-     this.setState({ show: true, Mtitle: true, img: img });
-   };
+  clickHandler = (img, e) => {
+    this.setState({ show: true, Mtitle: "true", img: img });
+  };
 
-   handleClose = () => {
-     this.setState({ show: false });
-   };
+  handleClose = () => {
+    this.setState({ show: false });
+  };
+
+  img = () => {};
 
   render() {
     return (
@@ -36,21 +44,20 @@ export default class Galeria extends Component {
             </div>
           </div>
           <div className="galeria-right">
-
-         
-            
-            <Link className="link-galeria" onClick={this.clickHandler.bind(this, )} to="#">
-            <img className="link-img"
+            <Link
+              className="link-galeria"
+              onClick={this.clickHandler.bind(this)}
+              to="#"
+            >
+              <img
+                className="link-img"
                 src={Verificacion}
                 alt="fachadas"
                 height="25px"
                 width="25px"
-                
               />
               Fachadas
             </Link>
-          
-            
 
             {/* <div className="row-galeria">
               <h5>Construcciones</h5>
@@ -91,17 +98,26 @@ export default class Galeria extends Component {
           size="lg"
           show={this.state.show}
           onHide={this.handleClose}
-          animation={false}
+          animation={true}
+          className="modalLarge"
         >
           <Modal.Header closeButton>
             <Modal.Title>{this.state.Mtitle}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <img
-              style={{ maxWidth: "100%" }}
-              src={this.state.img}
-              alt="projects"
-            />
+            <Carrousel
+              element="galeria-modal"
+              option={settingsCarousel_sistemas}
+              controls={true}
+            >
+              {imgBaño.map((img, index) => (
+                <li>
+                  <div>
+                    <img src={img} alt="" />
+                  </div>
+                </li>
+              ))}
+            </Carrousel>
           </Modal.Body>
           <Modal.Footer></Modal.Footer>
         </Modal>
