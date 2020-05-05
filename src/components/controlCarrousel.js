@@ -112,7 +112,7 @@ export const configParticlesHome = {
 export const settingsCarousel_sistemas = {
   type: "carousel",
   startAt: 0,
-  autoplay: 5600,
+  autoplay: false,
   hoverpause: true,
   focusAt: "center",
   perView: 1,

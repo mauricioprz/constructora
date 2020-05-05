@@ -9,34 +9,59 @@ const Carousel = ({ element = "glide", option, children, controls }) => {
     slider.mount();
     slider.on("run.before", (event) => {});
   }, [slider]);
-
   return (
     <div className={element}>
-      <div className="glide__track" data-glide-el="track">
-        <ul className="glide__slides">
-          {children.map((slide, idex) => {
+      <div className="glide__track caruosel_custom" data-glide-el="track">
+        <ul className="glide__slides ul-custom">
+          {children.map((slide, key) => {
             return React.cloneElement(slide, {
-              key: indexedDB,
-              className: `${slide.props.className} glide__slide`,
+              key: key,
+              className: `glide__slide`,
+              "data-key": key,
             });
           })}
         </ul>
-      </div>
-      <div class="glide__bullets" data-glide-el="controls[nav]">
-        <button class="glide__bullet" data-glide-dir="=0"></button>
-        <button class="glide__bullet" data-glide-dir="=1"></button>
-        <button class="glide__bullet" data-glide-dir="=2"></button>
-      </div>
-      {controls && (
-        <div className="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-            prev
-          </button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-            next
-          </button>
+        <div
+          className="glide__bullets butom_slider"
+          data-glide-el="controls[nav]"
+        >
+          {children.map((index, key) => {
+            return (
+              <button
+                className="glide__bullet"
+                data-glide-dir={`=${key}`}
+                key={key}
+              ></button>
+            );
+          })}
         </div>
-      )}
+        {controls && (
+          <React.Fragment>
+            <div
+              className="glide__arrows control_anterior"
+              data-glide-el="controls"
+            >
+              <button
+                className="glide__arrow glide__arrow--left"
+                data-glide-dir="<"
+              >
+                prev
+              </button>
+            </div>
+            <div
+              className="glide__arrows control_siguiente"
+              data-glide-el="controls"
+            >
+              <button
+                className="glide__arrow glide__arrow--right"
+                data-glide-dir=">"
+              >
+                next
+              </button>
+            </div>
+          </React.Fragment>
+        )}
+      </div>
     </div>
   );
 };

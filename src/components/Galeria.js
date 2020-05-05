@@ -11,21 +11,16 @@ import Video from "./Video2";
 import "../assets/css/video.css";
 import { Modal } from "react-bootstrap";
 import Carrousel from "./carousel";
-import {
-  configParticlesHome,
-  settingsCarousel_sistemas,
-  settingsCarousel_noticias,
-} from "./controlCarrousel";
+import { settingsCarousel_sistemas } from "./controlCarrousel";
 import { imgBaño } from "../assets/images/galeria/baños/baños";
 export default class Galeria extends Component {
   state = {
     show: false,
-    Mtitle: "Casa",
-    img: "",
+    img: [],
   };
 
   clickHandler = (img, e) => {
-    this.setState({ show: true, Mtitle: "true", img: img });
+    this.setState({ show: true, img });
   };
 
   handleClose = () => {
@@ -46,7 +41,7 @@ export default class Galeria extends Component {
           <div className="galeria-right">
             <Link
               className="link-galeria"
-              onClick={this.clickHandler.bind(this)}
+              onClick={this.clickHandler.bind(this, imgBaño)}
               to="#"
             >
               <img
@@ -58,44 +53,9 @@ export default class Galeria extends Component {
               />
               Fachadas
             </Link>
-
-            {/* <div className="row-galeria">
-              <h5>Construcciones</h5>
-              <img
-                onClick={this.clickHandler.bind(this, ImagesConstrucciones)}
-                className="imagen-galeria"
-                src={ImagesConstrucciones}
-                alt="Video Remcon"
-                id={1}
-              ></img>
-            </div>
-            <div className="row-galeria">
-              <h5>Proyectos Especiales</h5>
-              <img
-                onClick={this.clickHandler.bind(
-                  this,
-                  ImagesProyectosEspeciales
-                )}
-                className="imagen-galeria"
-                src={ImagesProyectosEspeciales}
-                alt="Video Remcon"
-                id={2}
-              ></img>
-            </div>
-            <div className="row-galeria">
-              <h5>Remodelaciones</h5>
-              <img
-                onClick={this.clickHandler.bind(this, ImagesRemodelaciones)}
-                className="imagen-galeria"
-                src={ImagesRemodelaciones}
-                alt="Video Remcon"
-                id={3}
-              ></img>
-            </div> */}
           </div>
         </div>
         <Modal
-          size="lg"
           show={this.state.show}
           onHide={this.handleClose}
           animation={true}
@@ -110,13 +70,15 @@ export default class Galeria extends Component {
               option={settingsCarousel_sistemas}
               controls={true}
             >
-              {imgBaño.map((img, index) => (
-                <li>
-                  <div>
-                    <img src={img} alt="" />
-                  </div>
-                </li>
-              ))}
+              {this.state.img.map((img, index) => {
+                return (
+                  <li key="index">
+                    <div>
+                      <img src={img} alt="" />
+                    </div>
+                  </li>
+                );
+              })}
             </Carrousel>
           </Modal.Body>
           <Modal.Footer></Modal.Footer>
