@@ -2,6 +2,8 @@ import Glide from "@glidejs/glide";
 import React, { useEffect, useState } from "react";
 import "@glidejs/glide/src/assets/sass/glide.core.scss";
 import "../assets/css/carrousel.css";
+import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Carousel = ({ element = "glide", option, children, controls }) => {
   const [slider] = useState(new Glide(`.${element}`, option));
 
@@ -45,7 +47,7 @@ const Carousel = ({ element = "glide", option, children, controls }) => {
                 className="glide__arrow glide__arrow--left"
                 data-glide-dir="<"
               >
-                prev
+                <FontAwesomeIcon className="iconF" icon={faArrowLeft} />
               </button>
             </div>
             <div
@@ -56,7 +58,7 @@ const Carousel = ({ element = "glide", option, children, controls }) => {
                 className="glide__arrow glide__arrow--right"
                 data-glide-dir=">"
               >
-                next
+                <FontAwesomeIcon className="iconF" icon={faArrowRight} />
               </button>
             </div>
           </React.Fragment>

@@ -22,19 +22,20 @@
 
 .butom_slider > button {
   outline: none;
-  width: 50px;
-  height: 50px;
+  width: 1.3em;
+  height: 1.3em;
   border-radius: 50%;
   background: transparent;
   margin: 0 0 0 10px;
+  border-color: #a9a9a97d;
 }
 
 .butom_slider > button:hover {
-  background: black;
+  background: #fff4f466;
 }
 
 .glide__bullet--active {
-  background: black !important;
+  background: #fff4f466 !important;
 }
 
 .ul-custom {
@@ -77,4 +78,18 @@
 
 .control_siguiente > button:hover {
   background: #00000080;
+}
+
+.iconF {
+  color: white;
+  font-size: 1.5em;
+  transition: ease 500ms;
+}
+
+.control_siguiente:hover .iconF {
+  font-size: 2em;
+}
+
+.control_anterior:hover .iconF {
+  font-size: 2em;
 }
