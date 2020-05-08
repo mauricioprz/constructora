@@ -69,6 +69,7 @@ export default class Galeria extends Component {
               element="galeria-modal"
               option={settingsCarousel_sistemas}
               controls={true}
+              img={this.state.img}
             >
               {this.state.img.map((img, index) => {
                 return (
