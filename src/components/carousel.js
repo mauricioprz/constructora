@@ -7,21 +7,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Carousel = ({ element = "glide", option, children, controls, img }) => {
   const [slider] = useState(new Glide(`.${element}`, option));
   const [numberimg, setnumberimg] = useState(0);
+
   const nexButton = useRef();
+  const intervalimg = useRef();
 
   useEffect(() => {
     slider.mount();
     slider.on("run.before", (event) => {});
-    autonextImg();
     nexButton.current.setAttribute("data-disabled", "false");
+    autonextImg();
+
+    return () => {
+      clearInterval(intervalimg.current);
+    };
   }, [slider]);
   let numero = numberimg + 1;
-  const autonextImg = () => {
-    setInterval(() => {
+
+  let autonextImg = () => {
+    intervalimg.current = setInterval(function () {
       if (numero >= img.length - 1) {
-        numero = 0;
-        console.log("prueba");
+        numero = 1;
         setnumberimg(0);
+        slider.go(">");
       } else {
         console.log("aumenta");
         setnumberimg(numero++);
@@ -29,7 +36,9 @@ const Carousel = ({ element = "glide", option, children, controls, img }) => {
       }
     }, 3500);
   };
+
   const nextimg = () => {
+    clearInterval(intervalimg.current);
     if (nexButton.current.attributes["data-disabled"].value == "false") {
       nexButton.current.setAttribute("data-disabled", "true");
       setTimeout(() => {
@@ -44,16 +53,18 @@ const Carousel = ({ element = "glide", option, children, controls, img }) => {
         setnumberimg(number);
       }
     }
+    autonextImg();
   };
 
   const backimg = () => {
+    clearInterval(intervalimg.current);
     if (nexButton.current.attributes["data-disabled"].value == "false") {
       nexButton.current.setAttribute("data-disabled", "true");
       setTimeout(() => {
         nexButton.current.setAttribute("data-disabled", "false");
       }, 400);
       if (numberimg == 0) {
-        numero = 0;
+        numero = img.length - 1;
         setnumberimg(img.length - 1);
       } else {
         numero--;
@@ -61,6 +72,7 @@ const Carousel = ({ element = "glide", option, children, controls, img }) => {
         setnumberimg(number);
       }
     }
+    autonextImg();
   };
 
   return (
