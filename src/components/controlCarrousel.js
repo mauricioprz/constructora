@@ -115,7 +115,7 @@ export const settingsCarousel_sistemas = {
   autoplay: false,
   hoverpause: true,
   focusAt: "center",
-  perView: 1,
+  perView: 5,
 
   gap: 30,
   breakpoints: {

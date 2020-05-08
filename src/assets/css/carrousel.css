@@ -1,6 +1,7 @@
-.glide__slides > li > div img {
+/* .glide__slides > li > div img {
   width: 100%;
-}
+  max-width: 600px;
+} */
 
 .modalLarge > div {
   max-width: 70% !important;
@@ -92,4 +93,19 @@
 
 .control_anterior:hover .iconF {
   font-size: 2em;
+}
+
+.glide__slides > li > div img {
+  max-width: 90%;
+  max-height: 150px;
+}
+
+.imagesVista {
+  text-align: center;
+  margin: 10px 0 29px 0;
+  max-height: 500px;
+}
+
+.imagesVista > img {
+  max-height: 500px;
 }
