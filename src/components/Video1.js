@@ -46,6 +46,7 @@ export default class Video extends Component {
               width="100%"
               height="100%"
               autoPlay
+              controls
               src={videoinicio}
             ></video>
           </Modal.Body>

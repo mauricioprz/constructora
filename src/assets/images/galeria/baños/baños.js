@@ -21,4 +21,4 @@ import baño21 from "./baño21.jpg";
 import baño22 from "./baño22.jpg";
 import baño23 from "./baño23.jpg";
 
-export const imgBaño = [baño1, baño4, baño3];
+export const imgBaño = [baño1, baño4, baño3, baño7];

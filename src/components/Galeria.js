@@ -51,11 +51,12 @@ export default class Galeria extends Component {
                 height="25px"
                 width="25px"
               />
-              Fachadas
+              Baños
             </Link>
           </div>
         </div>
         <Modal
+        modal-sm
           show={this.state.show}
           onHide={this.handleClose}
           animation={true}
