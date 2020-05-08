@@ -21,9 +21,6 @@ import baño21 from "./baño21.jpg";
 import baño22 from "./baño22.jpg";
 import baño23 from "./baño23.jpg";
 
-<<<<<<< HEAD
-export const imgBaño = [baño1, baño4, baño3, baño7];
-=======
 export const imgBaño = [
   baño1,
   baño4,
@@ -48,4 +45,3 @@ export const imgBaño = [
   baño22,
   baño23,
 ];
->>>>>>> 4ea6052b33f0cebb2424bb8aca4c6929afde0f11
