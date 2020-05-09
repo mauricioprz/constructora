@@ -12,15 +12,22 @@ import "../assets/css/video.css";
 import { Modal } from "react-bootstrap";
 import Carrousel from "./carousel";
 import { settingsCarousel_sistemas } from "./controlCarrousel";
-import { imgBaño } from "../assets/images/galeria/baños/baños";
+import {
+  imgBaño,
+  imgCocina,
+  imgElevador,
+  imgEstancias,
+  imgFachadas,
+} from "../assets/images/galeria/imgCarousel";
 export default class Galeria extends Component {
   state = {
     show: false,
     img: [],
+    titulo: "",
   };
 
-  clickHandler = (img, e) => {
-    this.setState({ show: true, img });
+  clickHandler = (img, titulo, e) => {
+    this.setState({ show: true, img, titulo });
   };
 
   handleClose = () => {
@@ -41,7 +48,63 @@ export default class Galeria extends Component {
           <div className="galeria-right">
             <Link
               className="link-galeria"
-              onClick={this.clickHandler.bind(this, imgBaño)}
+              onClick={this.clickHandler.bind(this, imgBaño, "Baños")}
+              to="#"
+            >
+              <img
+                className="link-img"
+                src={Verificacion}
+                alt="fachadas"
+                height="25px"
+                width="25px"
+              />
+              Baños
+            </Link>
+            <Link
+              className="link-galeria"
+              onClick={this.clickHandler.bind(this, imgCocina, "Cocinas")}
+              to="#"
+            >
+              <img
+                className="link-img"
+                src={Verificacion}
+                alt="fachadas"
+                height="25px"
+                width="25px"
+              />
+              Cocinas
+            </Link>
+            <Link
+              className="link-galeria"
+              onClick={this.clickHandler.bind(this, imgElevador, "Elevadores")}
+              to="#"
+            >
+              <img
+                className="link-img"
+                src={Verificacion}
+                alt="fachadas"
+                height="25px"
+                width="25px"
+              />
+              Elevadores
+            </Link>
+            <Link
+              className="link-galeria"
+              onClick={this.clickHandler.bind(this, imgEstancias, "Estancias")}
+              to="#"
+            >
+              <img
+                className="link-img"
+                src={Verificacion}
+                alt="fachadas"
+                height="25px"
+                width="25px"
+              />
+              Estancias
+            </Link>
+            <Link
+              className="link-galeria"
+              onClick={this.clickHandler.bind(this, imgFachadas, "Fachadas")}
               to="#"
             >
               <img
@@ -62,7 +125,7 @@ export default class Galeria extends Component {
           className="modalLarge"
         >
           <Modal.Header closeButton>
-            <Modal.Title>{this.state.Mtitle}</Modal.Title>
+            <Modal.Title>{this.state.titulo}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <Carrousel

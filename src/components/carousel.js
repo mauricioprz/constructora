@@ -25,16 +25,14 @@ const Carousel = ({ element = "glide", option, children, controls, img }) => {
 
   let autonextImg = () => {
     intervalimg.current = setInterval(function () {
-      if (numero >= img.length - 1) {
+      if (numero > img.length - 1) {
         numero = 1;
         setnumberimg(0);
-        slider.go(">");
       } else {
-        console.log("aumenta");
         setnumberimg(numero++);
-        slider.go(">");
       }
-    }, 3500);
+      slider.go(">");
+    }, 4000);
   };
 
   const nextimg = () => {
@@ -74,6 +72,14 @@ const Carousel = ({ element = "glide", option, children, controls, img }) => {
     }
     autonextImg();
   };
+  const changeimgbuton = (item, e) => {
+    console.log(item);
+    clearInterval(intervalimg.current);
+    console.log(item);
+    numero = item;
+    setnumberimg(item);
+    autonextImg();
+  };
 
   return (
     <Fragment>
@@ -86,7 +92,7 @@ const Carousel = ({ element = "glide", option, children, controls, img }) => {
             {children.map((slide, key) => {
               return React.cloneElement(slide, {
                 key: key,
-                className: `glide__slide`,
+                className: `glide__slide centerCarrousel`,
                 "data-key": key,
               });
             })}
@@ -101,6 +107,7 @@ const Carousel = ({ element = "glide", option, children, controls, img }) => {
                   className="glide__bullet"
                   data-glide-dir={`=${key}`}
                   key={key}
+                  onClick={changeimgbuton.bind(this, key)}
                 ></button>
               );
             })}
