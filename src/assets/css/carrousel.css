@@ -42,6 +42,7 @@
 .ul-custom {
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 .control_anterior {
@@ -108,4 +109,8 @@
 
 .imagesVista > img {
   max-height: 500px;
+}
+
+.centerCarrousel {
+  text-align: center;
 }
