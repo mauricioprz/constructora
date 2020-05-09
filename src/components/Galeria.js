@@ -46,9 +46,9 @@ export default class Galeria extends Component {
             </div>
           </div>
           <div className="galeria-right">
-            <Link
+          <Link
               className="link-galeria"
-              onClick={this.clickHandler.bind(this, imgBaño, "Baños")}
+              onClick={this.clickHandler.bind(this, imgFachadas, "Fachadas")}
               to="#"
             >
               <img
@@ -58,35 +58,7 @@ export default class Galeria extends Component {
                 height="25px"
                 width="25px"
               />
-              Baños
-            </Link>
-            <Link
-              className="link-galeria"
-              onClick={this.clickHandler.bind(this, imgCocina, "Cocinas")}
-              to="#"
-            >
-              <img
-                className="link-img"
-                src={Verificacion}
-                alt="fachadas"
-                height="25px"
-                width="25px"
-              />
-              Cocinas
-            </Link>
-            <Link
-              className="link-galeria"
-              onClick={this.clickHandler.bind(this, imgElevador, "Elevadores")}
-              to="#"
-            >
-              <img
-                className="link-img"
-                src={Verificacion}
-                alt="fachadas"
-                height="25px"
-                width="25px"
-              />
-              Elevadores
+              Fachadas
             </Link>
             <Link
               className="link-galeria"
@@ -104,7 +76,21 @@ export default class Galeria extends Component {
             </Link>
             <Link
               className="link-galeria"
-              onClick={this.clickHandler.bind(this, imgFachadas, "Fachadas")}
+              onClick={this.clickHandler.bind(this, imgCocina, "Cocinas")}
+              to="#"
+            >
+              <img
+                className="link-img"
+                src={Verificacion}
+                alt="fachadas"
+                height="25px"
+                width="25px"
+              />
+              Cocinas
+            </Link>
+            <Link
+              className="link-galeria"
+              onClick={this.clickHandler.bind(this, imgBaño, "Baños")}
               to="#"
             >
               <img
@@ -116,6 +102,23 @@ export default class Galeria extends Component {
               />
               Baños
             </Link>
+            
+            <Link
+              className="link-galeria"
+              onClick={this.clickHandler.bind(this, imgElevador, "Elevadores")}
+              to="#"
+            >
+              <img
+                className="link-img"
+                src={Verificacion}
+                alt="fachadas"
+                height="25px"
+                width="25px"
+              />
+              Elevadores
+            </Link>
+            
+            
           </div>
         </div>
         <Modal
