@@ -1,13 +1,16 @@
 .row-containerlistado {
-     width: 50%;
-     height: 100%;
+  width: 50%;
+  height: 100%;
 }
 
 .description {
-     display: flex;
-     width: 50%;
-     height: 100%;
-     align-items: center;
-     margin: 0px 19px 0px 19px;
-     
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  margin: 0px 19px 0px 19px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }
