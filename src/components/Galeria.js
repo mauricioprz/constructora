@@ -48,7 +48,7 @@ export default class Galeria extends Component {
               <Video />
             </div>
           </div>
-          <div className="galeria-right">
+          <div className="galeria-right wrap">
             <Link
               className="link-galeria"
               onClick={this.clickHandler.bind(this, imgFachadas, "Fachadas")}

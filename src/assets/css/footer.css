@@ -68,8 +68,33 @@
   margin: 0;
 }
 
-
-
 .aviso_privacidad {
   text-align: left;
+}
+
+@media (max-width: 500px) {
+  .pie {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .aviso {
+    text-align: center;
+    order: 3;
+    width: 100%;
+  }
+  .children-aviso {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .icon-social {
+    order: 1;
+    width: 100%;
+  }
+
+  .correo {
+    order: 2;
+    width: 100%;
+  }
 }

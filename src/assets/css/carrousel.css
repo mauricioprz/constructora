@@ -3,11 +3,6 @@
   max-width: 600px;
 } */
 
-.modalLarge > div {
-  max-width: 70% !important;
-  width: 70% !important;
-}
-
 .caruosel_custom {
   position: relative;
 }
