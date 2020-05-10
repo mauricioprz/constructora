@@ -27,7 +27,7 @@
 }
 
 .nav-item > a {
-  padding: 0 0 0 10px !important;
+  padding: 0 10px 0 10px !important;
 }
 
 .navbar-brand {
@@ -54,6 +54,6 @@
 }
 
 .navbar-collapse {
-  z-index: 9999;
+  z-index: 1040;
   background: #c4c4c4;
 }
