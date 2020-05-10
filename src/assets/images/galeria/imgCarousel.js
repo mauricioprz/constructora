@@ -92,6 +92,44 @@ import fachada9 from "./fachadas/fachada9.jpg";
 import fachada10 from "./fachadas/fachada10.jpg";
 import fachada11 from "./fachadas/fachada11.jpg";
 
+//@carrousel para lobby_accesos
+
+import lobby1 from "./lobby_accesos/lobby1.jpg";
+import lobby2 from "./lobby_accesos/lobby2.jpg";
+import lobby3 from "./lobby_accesos/lobby3.jpg";
+import lobby4 from "./lobby_accesos/lobby4.jpg";
+import lobby5 from "./lobby_accesos/lobby5.jpg";
+import lobby6 from "./lobby_accesos/lobby6.jpg";
+import lobby7 from "./lobby_accesos/lobby7.jpg";
+import lobby8 from "./lobby_accesos/lobby8.jpg";
+import lobby9 from "./lobby_accesos/lobby9.jpg";
+import lobby10 from "./lobby_accesos/lobby10.jpg";
+import lobby11 from "./lobby_accesos/lobby11.jpg";
+
+//@carrousel para proyectos_especiales
+
+import especiales1 from "./proyectos_especiales/especiales1.jpg";
+import especiales2 from "./proyectos_especiales/especiales2.jpg";
+import especiales3 from "./proyectos_especiales/especiales3.jpg";
+import especiales4 from "./proyectos_especiales/especiales4.jpg";
+import especiales5 from "./proyectos_especiales/especiales5.jpg";
+import especiales6 from "./proyectos_especiales/especiales6.jpg";
+
+//@carrousel para vestidores
+
+import vestidor1 from "./vestidores/vestidor1.jpg";
+import vestidor2 from "./vestidores/vestidor2.jpg";
+import vestidor3 from "./vestidores/vestidor3.jpg";
+import vestidor4 from "./vestidores/vestidor4.jpg";
+import vestidor5 from "./vestidores/vestidor5.jpg";
+import vestidor6 from "./vestidores/vestidor6.jpg";
+import vestidor7 from "./vestidores/vestidor7.jpg";
+import vestidor8 from "./vestidores/vestidor8.jpg";
+import vestidor9 from "./vestidores/vestidor9.jpg";
+import vestidor10 from "./vestidores/vestidor10.jpg";
+import vestidor11 from "./vestidores/vestidor11.jpg";
+import vestidor12 from "./vestidores/vestidor12.jpg";
+
 export const imgBaño = [
   baño1,
   baño4,
@@ -182,4 +220,42 @@ export const imgFachadas = [
   fachada9,
   fachada10,
   fachada11,
+];
+
+export const imgloby = [
+  lobby1,
+  lobby2,
+  lobby3,
+  lobby4,
+  lobby5,
+  lobby6,
+  lobby7,
+  lobby8,
+  lobby9,
+  lobby10,
+  lobby11,
+];
+
+export const imgSpeciales = [
+  especiales1,
+  especiales2,
+  especiales3,
+  especiales4,
+  especiales5,
+  especiales6,
+];
+
+export const imgVestidor = [
+  vestidor1,
+  vestidor2,
+  vestidor3,
+  vestidor4,
+  vestidor5,
+  vestidor6,
+  vestidor7,
+  vestidor8,
+  vestidor9,
+  vestidor10,
+  vestidor11,
+  vestidor12,
 ];

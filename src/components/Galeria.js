@@ -18,6 +18,9 @@ import {
   imgElevador,
   imgEstancias,
   imgFachadas,
+  imgSpeciales,
+  imgVestidor,
+  imgloby,
 } from "../assets/images/galeria/imgCarousel";
 export default class Galeria extends Component {
   state = {
@@ -46,7 +49,7 @@ export default class Galeria extends Component {
             </div>
           </div>
           <div className="galeria-right">
-          <Link
+            <Link
               className="link-galeria"
               onClick={this.clickHandler.bind(this, imgFachadas, "Fachadas")}
               to="#"
@@ -102,7 +105,7 @@ export default class Galeria extends Component {
               />
               Baños
             </Link>
-            
+
             <Link
               className="link-galeria"
               onClick={this.clickHandler.bind(this, imgElevador, "Elevadores")}
@@ -117,12 +120,59 @@ export default class Galeria extends Component {
               />
               Elevadores
             </Link>
-            
-            
+
+            <Link
+              className="link-galeria"
+              onClick={this.clickHandler.bind(
+                this,
+                imgSpeciales,
+                "Proyectos Especiales"
+              )}
+              to="#"
+            >
+              <img
+                className="link-img"
+                src={Verificacion}
+                alt="fachadas"
+                height="25px"
+                width="25px"
+              />
+              Proyectos Especiales
+            </Link>
+
+            <Link
+              className="link-galeria"
+              onClick={this.clickHandler.bind(this, imgVestidor, "Vestidores")}
+              to="#"
+            >
+              <img
+                className="link-img"
+                src={Verificacion}
+                alt="fachadas"
+                height="25px"
+                width="25px"
+              />
+              Vestidores
+            </Link>
+
+            <Link
+              className="link-galeria"
+              onClick={this.clickHandler.bind(this, imgloby, "lobbies")}
+              to="#"
+            >
+              <img
+                className="link-img"
+                src={Verificacion}
+                alt="fachadas"
+                height="25px"
+                width="25px"
+              />
+              lobbies
+            </Link>
           </div>
         </div>
         <Modal
-        modal-sm
+          modal-sm
           show={this.state.show}
           onHide={this.handleClose}
           animation={true}

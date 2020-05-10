@@ -73,10 +73,8 @@ const Carousel = ({ element = "glide", option, children, controls, img }) => {
     autonextImg();
   };
   const changeimgbuton = (item, e) => {
-    console.log(item);
     clearInterval(intervalimg.current);
-    console.log(item);
-    numero = item;
+    numero = item + 1;
     setnumberimg(item);
     autonextImg();
   };
