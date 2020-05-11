@@ -1,5 +1,7 @@
 .marco-contacto {
      display: flex;
+     margin-top: 10px;
+    margin-bottom: 10px;
      width: 92%;
      height: 90%;
      justify-content: space-evenly;
@@ -9,7 +11,7 @@
 
 .contac-left {
      width: 50%;
-     height: 100%;
+     height: auto;
      /* border: 1px solid blue; */
 }
 
@@ -76,9 +78,43 @@
      display: flex;
      flex-direction: column;
      /* border: 1px solid red; */
-     text-align: center;
-     
-     
+     text-align: center;     
 }
 
+@media (max-width: 430px) {
+     .marco-contacto {
+          display: flex;
+          flex-direction: column-reverse;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          width: 92%;
+          height: 90%;
+     }
 
+          .contac-left {
+               width: 100%;
+               height: 100vmin;
+}
+.contac-right {
+     /* display: flex; */
+     /* flex-direction: column; */
+     width: 100%;
+     height: 50%;
+     /* border: 1px solid pink; */
+     background-color: #c4c4c4;
+     border-radius: 5px;
+     /* padding-bottom: 10px; */
+     margin-bottom: 10px;
+}
+.direction {
+     
+margin-left: 20px;
+ }
+
+.title-contact {
+     margin-top: 10px;
+}
+.direction-p {
+     margin-bottom: .5rem;
+}
+}

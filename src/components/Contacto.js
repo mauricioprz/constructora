@@ -37,7 +37,7 @@ export default class Contacto extends Component {
                 <p className="direction-p">
                   Horario Lunes a Viernes
                   de 10:00 am a 18:00 pm 
-                  <br/>Tel. +52 (55) 55962058
+                  Tel. +52 (55) 55962058
                 </p>
               </div>
             </div>
