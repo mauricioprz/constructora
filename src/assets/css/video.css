@@ -3,17 +3,11 @@
   height: 100%;
 }
 
-.modal-lg {
-  width: 65%;
-}
-
 .modal-header {
   padding: 6px;
 }
 
 .modal-xl {
-  width: 70%;
-
   margin-top: 20px;
 }
 

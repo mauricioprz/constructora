@@ -65,6 +65,20 @@ export default class Galeria extends Component {
             </Link>
             <Link
               className="link-galeria"
+              onClick={this.clickHandler.bind(this, imgloby, "lobbies")}
+              to="#"
+            >
+              <img
+                className="link-img"
+                src={Verificacion}
+                alt="fachadas"
+                height="25px"
+                width="25px"
+              />
+              Lobbys y accesos
+            </Link>
+            <Link
+              className="link-galeria"
               onClick={this.clickHandler.bind(this, imgEstancias, "Estancias")}
               to="#"
             >
@@ -105,7 +119,20 @@ export default class Galeria extends Component {
               />
               Baños
             </Link>
-
+            <Link
+              className="link-galeria"
+              onClick={this.clickHandler.bind(this, imgVestidor, "Vestidores")}
+              to="#"
+            >
+              <img
+                className="link-img"
+                src={Verificacion}
+                alt="fachadas"
+                height="25px"
+                width="25px"
+              />
+              Vestidores
+            </Link>
             <Link
               className="link-galeria"
               onClick={this.clickHandler.bind(this, imgElevador, "Elevadores")}
@@ -120,7 +147,6 @@ export default class Galeria extends Component {
               />
               Elevadores
             </Link>
-
             <Link
               className="link-galeria"
               onClick={this.clickHandler.bind(
@@ -140,35 +166,9 @@ export default class Galeria extends Component {
               Proyectos Especiales
             </Link>
 
-            <Link
-              className="link-galeria"
-              onClick={this.clickHandler.bind(this, imgVestidor, "Vestidores")}
-              to="#"
-            >
-              <img
-                className="link-img"
-                src={Verificacion}
-                alt="fachadas"
-                height="25px"
-                width="25px"
-              />
-              Vestidores
-            </Link>
+            
 
-            <Link
-              className="link-galeria"
-              onClick={this.clickHandler.bind(this, imgloby, "lobbies")}
-              to="#"
-            >
-              <img
-                className="link-img"
-                src={Verificacion}
-                alt="fachadas"
-                height="25px"
-                width="25px"
-              />
-              lobbies
-            </Link>
+            
           </div>
         </div>
         <Modal

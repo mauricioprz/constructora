@@ -31,7 +31,7 @@
 }
 
 .glide__bullet--active {
-  background: #fff4f466 !important;
+  background: #203746 !important;
 }
 
 .ul-custom {
@@ -49,7 +49,7 @@
 
 .control_anterior > button {
   height: 100%;
-  background: #00000030;
+  background: #203746;
   border: transparent;
   outline: none;
 }
@@ -68,7 +68,7 @@
 
 .control_siguiente > button {
   height: 100%;
-  background: #00000030;
+  background: #203746;
   border: transparent;
   outline: none;
 }

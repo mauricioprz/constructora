@@ -68,10 +68,6 @@ h1 {
   font-family: "fuente1";
 }
 
-/* .modal-lg {
-  width: 50%;
-} */
-
 @media (max-width: 768px) {
   .background {
     height: auto;

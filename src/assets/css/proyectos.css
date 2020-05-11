@@ -34,10 +34,9 @@
   max-height: 100%;
 }
 
-/* .modal-lg {
-  width: 65%;
-} */
-
+.modal-title {
+  font-size: 3.5vmin;
+}
 @media (max-width: 768px) {
   .marco-project {
     height: auto;
