@@ -46,7 +46,7 @@ export default class Proyectos extends Component {
               <img
                 onClick={this.clickHandler.bind(this, {
                   img: Antesydespues3,
-                  title: "Eficio Simon Bolivar",
+                  title: "Edificio Simon Bolivar",
                 })}
                 className="test"
                 src={Antesydespues3}
