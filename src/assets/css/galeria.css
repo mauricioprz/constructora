@@ -48,8 +48,8 @@
 
 @media (max-width: 768px) {
   .gback {
-    height: 80vh;
-    min-width: auto;
+    height: auto;
+    min-height: 80vh;
   }
   .galeria-left {
     width: 100%;
