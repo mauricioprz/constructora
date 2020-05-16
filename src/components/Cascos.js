@@ -9,7 +9,7 @@ export default class Cascos extends Component {
     return (
       <div className="cascos_container">
         <div className="marco-casco">
-          <img className="tamaño" src={CascoIzquierdo} alt="Imagen de casco" />
+          {/* <img className="tamaño" src={CascoIzquierdo} alt="Imagen de casco" /> */}
 
           <div className="casco-txt">
             <h5 className="title-casco">MISION</h5>
@@ -21,7 +21,7 @@ export default class Cascos extends Component {
           </div>
         </div>
         <div className="marco-casco2">
-          <img className="tamaño2" src={CascoCentral} alt="Imagen de casco" />
+          {/* <img className="tamaño2" src={CascoCentral} alt="Imagen de casco" /> */}
           <div className="casco-txt">
             <h5 className="title-casco2">VISION</h5>
             <p className="comentarios2">
@@ -32,7 +32,7 @@ export default class Cascos extends Component {
           </div>
         </div>
         <div className="marco-casco">
-          <img className="tamaño" src={CascoDerecho} alt="Imagen de casco" />
+          {/* <img className="tamaño" src={CascoDerecho} alt="Imagen de casco" /> */}
           <div className="casco-txt">
             <h5 className="title-casco3">VALORES</h5>
             <ul className="comentarios3">
