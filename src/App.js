@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./assets/css/App.css";
 
 import Navegacion from "./components/Navegacion";
@@ -17,15 +17,15 @@ function App() {
     <div className="principal">
       <Router>
         <Navegacion />
-
-        <Route path="/" exact component={Inicio} />
-        <Route path="/nosotros" component={Nosotros} />
-        <Route path="/servicios" component={Servicios} />
-        <Route path="/proyectos" component={Proyectos} />
-        <Route path="/galeria" component={Galeria} />
-        <Route path="/empresaunida" component={Unidad} />
-        <Route path="/contacto" component={Contacto} />
-
+        <Switch>
+          <Route exact path="/" component={Inicio} />
+          <Route path="/nosotros" component={Nosotros} />
+          <Route path="/servicios" component={Servicios} />
+          <Route path="/proyectos" component={Proyectos} />
+          <Route path="/galeria" component={Galeria} />
+          <Route path="/empresaunida" component={Unidad} />
+          <Route path="/contacto" component={Contacto} />
+        </Switch>
         <Footer />
       </Router>
     </div>

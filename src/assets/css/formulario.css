@@ -13,8 +13,8 @@
 
  .alert-warning{
      height: 100%;
-     width: 75%;    
-     font-size: 2.2vmin;
+     width: 75%;   
+     font-size: 1.8vmin !important; 
 }
 
 .alert {

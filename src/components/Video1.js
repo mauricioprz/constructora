@@ -24,10 +24,9 @@ export default class Video extends Component {
     return (
       <div>
         <video
-          onClick={this.clickHandler.bind(this, videoinicio)}
-          loop
+          // onClick={this.clickHandler.bind(this, videoinicio)}
+          controls
           autoPlay
-          muted
           width="100%"
           height="100%"
           src={videoinicio}

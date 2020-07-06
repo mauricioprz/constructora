@@ -8,7 +8,7 @@ const mapURL = "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geomet
 export default class Contacto extends Component {
   render() {
     return (
-      <div className="background">
+      <div className="background xbackground" >
         <div className="marco-contacto">
           <div className="contac-left">
             <MyMapComponent
@@ -29,7 +29,7 @@ export default class Contacto extends Component {
               <div className="direction">
                 <p className="direction-p">
                   Fuente de Trevi #20 Int 1,
-                   Lomas de Tecamachalco, Naucalpan de Juarez, Edo.
+                   Lomas de Tecamachalco 53950, Naucalpan de Juarez, Edo.
                  de México.
                 </p>
               </div>

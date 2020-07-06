@@ -1,43 +1,70 @@
 .imagen_de_noche {
-  width: 100%;
+  width: auto;
   height: 100%;
   position: relative;
   overflow: hidden;
 }
-
 .marco-nosotros {
   position: absolute;
-  width: 95%;
-  height: 50%;
+  width: auto;
+  height: 80%;
   display: flex;
   align-items: center;
 }
 .cascos_container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
 }
-
-.marco-casco {
-  position: relative;
+.marco-casco1 {
   display: flex;
-  justify-content: center;
-  width: 33.3%;
-  height: 72%;
-  align-self: flex-end;
+  /* justify-content: center; */
+  width: 20%;
+  height: 100%;
+  align-items: flex-end;
+  letter-spacing: 2px;
 }
-
-.marco-casco2 {
-  position: relative;
+.title-casco1 {
   display: flex;
-  justify-content: center;
+  position: relative;
+  color: white;
   width: 30%;
-  height: 85%;
-  align-self: baseline;
+  align-self: center;
+  margin-bottom: 15px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  align-items: flex-start;
 }
 
+.comentarios1 {
+  display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
+    /* position: absolute; */
+    color: white;
+    font-family: "fuente3";
+    font-size: 2.8vmin;
+    letter-spacing: 0.5px;
+}
+.marco-casco2 {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  width: 35%;
+  height: 100%;
+  align-items: flex-end;
+  letter-spacing: 2px;
+}
+.casco-txt2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 35%;
+  align-items: center;
+}
 .tamaño {
   position: absolute;
   display: flex;
@@ -52,127 +79,181 @@
   margin-bottom: 10px;
 }
 
-.casco-txt {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  height: 80%;
-}
-
-.title-casco {
-  display: flex;
-  position: relative;
-  color: black;
-  width: 60%;
-  align-self: center;
-  margin-top: 5px;
-  text-decoration: underline;
-}
-
-.comentarios {
-  display: flex;
-  padding-top: 30px;
-  line-height: 19px;
-  width: 45%;
-  height: 100%;
-  position: absolute;
-  color: black;
-  font-family: "fuente3";
-}
-
 .title-casco2 {
   display: flex;
   position: relative;
-  color: black;
-  /* width: 60%; */
+  color: white;
+  width: 30%;
   align-self: center;
-  margin-top: 5px;
+  margin-bottom: 15px;
   text-decoration: underline;
-  margin-top: 15px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+  margin-top: 10px;
 }
-
+.casco-txt1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90%;
+  align-items: center;
+}
 .comentarios2 {
   display: flex;
-  padding-top: 60px;
-  line-height: 20px;
-  width: 55%;
+  width: 95%;
   height: 100%;
-  position: absolute;
+  /* position: absolute; */
   color: black;
   font-family: "fuente3";
-  margin-left: 15px;
+  font-size: 2.8vmin;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  border: 1px solid #a1a39e;
+  background-color: #a1a39e;
+  border-radius: 10px;
+  margin-bottom: 60px;
 }
-
+.marco-casco3 {
+  display: flex;
+  /* justify-content: center; */
+  width: 20%;
+  height: 100%;
+  align-items: flex-end;
+  letter-spacing: 2px;
+}
 .title-casco3 {
   display: flex;
   position: relative;
-  color: black;
+  color: white;
   width: 30%;
   align-self: center;
-  margin-top: 5px;
+  margin-bottom: 20px;
   text-decoration: underline;
-  margin-top: 15px;
+  align-items: flex-end;
 }
-
+.casco-txt3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+  align-items: flex-end;
+}
 .comentarios3 {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
-  line-height: 19px;
-  width: 55%;
+  /* width: 75%; */
   height: 100%;
-  position: absolute;
-  color: black;
+  /* position: absolute; */
+  color: white;
   font-family: "fuente3";
-  margin-left: 10px;
+  font-size: 2.8vmin;
+  letter-spacing: 0.5px;
+}
+.comentarios3 li {
+  font-size: 2.8vmin;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .marco-nosotros {
     width: 100%;
-    height: 86%;
   }
   .cascos_container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    align-items: initial;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    align-items: center;
     justify-content: initial;
   }
   .cascos_container > div:nth-child(1) {
+    /* margin-bottom: 5px; */
     grid-row: 1;
     grid-column: 4 / 10;
   }
   .cascos_container > div:nth-child(2) {
+    /* margin-bottom: 5px; */
     grid-row: 2;
     grid-column: 4 / 10;
     width: 100%;
     height: 100%;
   }
   .cascos_container > div:nth-child(3) {
+    /* margin-bottom: 5px; */
     grid-row: 3;
     grid-column: 4 / 10;
   }
-
   .comentarios {
+    align-self: center;
+    color: white;
+    line-height: 18px;
     padding: 0;
     width: 56%;
-    margin: 6px 0 0 74px;
     z-index: 1;
     position: initial;
   }
-  .title-casco {
-    color: black;
-    text-align: center;
+  .title-casco1 {
+    display: flex;
+    align-self: center;
+    color: white;
     width: none !important;
-    margin: 10px 50px 0 0;
     z-index: 1;
     width: auto;
+    font-size: 2.9vmin;
   }
-  .tamaño {
+  .marco-casco1 {
+    position: relative;
+    display: block;
+    justify-content: baseline;
     width: 100%;
+    align-self: auto;
   }
-  .marco-casco {
+  .casco-txt1 {
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    /* height: 80%; */
+    align-items: center;
+  }
+  .casco-txt2 {
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    /* height: 80%; */
+    align-items: center;
+  }
+  .tamaño2 {
+    width: 100%;
+    height: 100%;
+  }
+  .marco-casco2 {
+    position: relative;
+    display: block;
+    justify-content: baseline;
+    align-self: auto;
+  }
+  .title-casco2 {
+    display: flex;
+    align-self: center;
+    color: white;
+    text-align: center;
+    width: none !important;
+    z-index: 1;
+    width: auto;
+    font-size: 2.9vmin;
+  }
+  .comentarios2 {
+    display: flex;
+    width: 75%;
+    /* height: 100%; */
+    /* position: absolute; */
+    color: white;
+    font-family: "fuente3";
+    font-size: 2.8vmin;
+    letter-spacing: 0.5px;
+    background: none;
+    border: none;
+    font-weight: 300;
+  }
+  .marco-casco3 {
     position: relative;
     display: block;
     justify-content: baseline;
@@ -180,40 +261,37 @@
     height: 100%;
     align-self: auto;
   }
-  .casco-txt {
-    width: auto;
-    height: auto;
-  }
-
-  .tamaño2 {
-    width: 100%;
-    height: 100%;
-  }
-  .title-casco2 {
-    color: black;
-    text-align: center;
-    width: none !important;
-    z-index: 1;
-    width: auto;
-  }
-  .comentarios2 {
-    height: 100%;
-    margin: 18px 0 0 90px;
-    padding: 0;
-    position: initial;
-    z-index: 1;
-  }
   .title-casco3 {
+    display: flex;
+    align-self: center;
+    color: white;
     width: auto;
+    font-size: 2.9vmin;
   }
   .comentarios3 {
     z-index: 1;
     padding: 0;
-    margin: 9px 0px 0 118px;
-    font-size: 8px;
     position: initial;
+    align-self: center;
+    margin-left: 23px;
   }
-  .nbackground {
+   .nbackground {
     height: 90vh !important;
+  } 
+  .comentarios3 li {
+    font-size: 2.9vmin;
+    line-height: 15px;
   }
+  .casco-txt3 {
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    /* height: 80%; */
+    align-items: center;
+  }
+}
+@media (min-width:768px)and (max-width:1023px)  {
+.xbackground {
+  height: 90vh !important;
+}
 }

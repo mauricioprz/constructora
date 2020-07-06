@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 import "../assets/css/galeria.css";
-//import { NavLink } from "react-router-dom";
-//import ImagesConstrucciones from "../assets/images/galeria/imagen-galeria1.jpg";
-//import ImagesProyectosEspeciales from "../assets/images/galeria/imagen-galeria2.jpg";
-//import ImagesRemodelaciones from "../assets/images/galeria/imagen-galeria3.jpg";
 import Verificacion from "../assets/images/galeria/palomita.png";
 import { Link } from "react-router-dom";
 
@@ -44,11 +40,12 @@ export default class Galeria extends Component {
       <div className="background gback">
         <div className="marco gmarco">
           <div className="galeria-left">
-            <div className="video2">
+            <div className="video1">
               <Video />
             </div>
           </div>
           <div className="galeria-right wrap">
+            <div className="galeria-centrar">
             <Link
               className="link-galeria"
               onClick={this.clickHandler.bind(this, imgFachadas, "Fachadas")}
@@ -65,7 +62,7 @@ export default class Galeria extends Component {
             </Link>
             <Link
               className="link-galeria"
-              onClick={this.clickHandler.bind(this, imgloby, "lobbies")}
+              onClick={this.clickHandler.bind(this, imgloby, "Lobbies y accesos")}
               to="#"
             >
               <img
@@ -165,10 +162,7 @@ export default class Galeria extends Component {
               />
               Proyectos Especiales
             </Link>
-
-            
-
-            
+            </div>
           </div>
         </div>
         <Modal

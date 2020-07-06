@@ -15,7 +15,7 @@ export default class Inicio extends Component {
       <div className={this.state.dclass}>
         <div className="marco">
           <div className="start-left">
-            <div className="video2">
+            <div className="video1">
               <VideoInicio video="videoIn" />
             </div>
           </div>

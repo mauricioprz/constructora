@@ -1,0 +1,21 @@
+.image-collage {
+     width: 70%;
+     height: 90%;
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+}
+
+@media (max-width: 768px) {
+     .image-collage{
+     width: auto;
+     /* height: 90%; */
+     /* align-items: center; */
+     margin: 20px 20px;
+     
+}
+img {
+     vertical-align: middle;
+     border-style: none;
+     
+}}
