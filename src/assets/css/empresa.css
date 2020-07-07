@@ -5,7 +5,7 @@
 .collageh {
      width: auto;
      height: 100%;
-     padding: 16px 0;
+     padding: 17px 0;
      align-items: center;
      display: flex;
      flex-direction: column;
@@ -19,7 +19,7 @@
      .image-collage {
           display: flex;
           height: 100%;
-          padding: 10px 5px;
+          padding: 10px 6px;
      }
 
 .collageh {
