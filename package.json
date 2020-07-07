@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "homepage": "http://www.remcon.com.mx",
+  "homepage": "https://www.remcon.com.mx",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
