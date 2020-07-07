@@ -1,21 +1,33 @@
 .image-collage {
-     width: 70%;
-     height: 90%;
+     display: contents;
+}
+
+.collageh {
+     width: auto;
+     height: 100%;
+     padding: 16px 0;
      align-items: center;
      display: flex;
      flex-direction: column;
+     margin: 20px 20px;
 }
 
-@media (max-width: 768px) {
-     .image-collage{
-     width: auto;
-     /* height: 90%; */
-     /* align-items: center; */
-     margin: 20px 20px;
-     
+.collagev {
+     display: none;
 }
-img {
-     vertical-align: middle;
-     border-style: none;
-     
-}}
+@media (max-width: 500px) {
+     .image-collage {
+          display: flex;
+          height: 100%;
+          padding: 10px 5px;
+     }
+
+.collageh {
+     display: none;
+}
+
+.collagev {
+     display: flex;
+}
+}
+

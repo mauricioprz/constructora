@@ -1,5 +1,5 @@
 .imagen_de_noche {
-  width: auto;
+  width: 65%;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -30,7 +30,7 @@
   display: flex;
   position: relative;
   color: white;
-  width: 30%;
+  /* width: 30%; */
   align-self: center;
   margin-bottom: 15px;
   text-decoration: underline;
@@ -42,6 +42,7 @@
   display: flex;
     flex-direction: column;
     width: 75%;
+    padding: 0 20px;
     height: 100%;
     /* position: absolute; */
     color: white;
@@ -100,7 +101,7 @@
 }
 .comentarios2 {
   display: flex;
-  width: 95%;
+  width: 100%;
   height: 100%;
   /* position: absolute; */
   color: black;
@@ -108,8 +109,9 @@
   font-size: 2.8vmin;
   letter-spacing: 0.5px;
   font-weight: 600;
-  border: 1px solid #a1a39e;
-  background-color: #a1a39e;
+  padding: 10px 10px 12px 15px;
+  /* border: 1px solid #a1a39e; */
+  background-color: white;
   border-radius: 10px;
   margin-bottom: 60px;
 }
@@ -277,6 +279,7 @@
   }
    .nbackground {
     height: 90vh !important;
+    
   } 
   .comentarios3 li {
     font-size: 2.9vmin;
@@ -294,4 +297,13 @@
 .xbackground {
   height: 90vh !important;
 }
+}
+
+@media (max-width: 768px){
+  .imagen_de_noche {
+    width: auto;
+  }
+  .comentarios1{
+    width: auto;
+  }
 }

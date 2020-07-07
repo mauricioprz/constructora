@@ -7,7 +7,7 @@ import Cascos from "./Cascos";
 export default class Nosotros extends Component {
   render() {
     return (
-      <div className="background nbackground zbackground xbackground">
+      <div className="background nbackground zbackground xbackground backgroundc">
         <img
           className="imagen_de_noche ajuste"
           src={Imagen_background}
