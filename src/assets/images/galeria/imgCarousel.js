@@ -1,26 +1,25 @@
-//@carrousel para el baño
-import baño1 from "./baños/baño1.jpg";
-import baño3 from "./baños/baño3.jpg";
-import baño4 from "./baños/baño4.jpg";
-import baño5 from "./baños/baño5.jpg";
-import baño6 from "./baños/baño6.jpg";
-import baño7 from "./baños/baño7.jpg";
-import baño8 from "./baños/baño8.jpg";
-import baño9 from "./baños/baño9.jpg";
-import baño10 from "./baños/baño10.jpg";
-import baño11 from "./baños/baño11.jpg";
-import baño12 from "./baños/baño12.jpg";
-import baño13 from "./baños/baño13.jpg";
-import baño14 from "./baños/baño14.jpg";
-import baño15 from "./baños/baño15.jpg";
-import baño16 from "./baños/baño16.jpg";
-import baño17 from "./baños/baño17.jpg";
-import baño18 from "./baños/baño18.jpg";
-import baño19 from "./baños/baño19.jpg";
-import baño20 from "./baños/baño20.jpg";
-import baño21 from "./baños/baño21.jpg";
-import baño22 from "./baños/baño22.jpg";
-import baño23 from "./baños/baño23.jpg";
+//@carrousel para el bano
+import bano1 from "./banos/bano1.jpg";
+import bano3 from "./banos/bano3.jpg";
+import bano4 from "./banos/bano4.jpg";
+import bano5 from "./banos/bano5.jpg";
+import bano6 from "./banos/bano6.jpg";
+import bano7 from "./banos/bano7.jpg";
+import bano8 from "./banos/bano8.jpg";
+import bano9 from "./banos/bano9.jpg";
+import bano10 from "./banos/bano10.jpg";
+import bano11 from "./banos/bano11.jpg";
+import bano12 from "./banos/bano12.jpg";
+import bano13 from "./banos/bano13.jpg";
+import bano14 from "./banos/bano14.jpg";
+import bano15 from "./banos/bano15.jpg";
+import bano16 from "./banos/bano16.jpg";
+import bano17 from "./banos/bano17.jpg";
+import bano18 from "./banos/bano18.jpg";
+import bano19 from "./banos/bano19.jpg";
+import bano20 from "./banos/bano20.jpg";
+import bano21 from "./banos/bano21.jpg";
+import bano22 from "./banos/bano22.jpg";
 
 //@carousel para la cocina
 
@@ -130,29 +129,28 @@ import vestidor10 from "./vestidores/vestidor10.jpg";
 import vestidor11 from "./vestidores/vestidor11.jpg";
 import vestidor12 from "./vestidores/vestidor12.jpg";
 
-export const imgBaño = [
-  baño1,
-  baño4,
-  baño3,
-  baño5,
-  baño6,
-  baño7,
-  baño8,
-  baño9,
-  baño10,
-  baño11,
-  baño12,
-  baño13,
-  baño14,
-  baño15,
-  baño16,
-  baño17,
-  baño18,
-  baño19,
-  baño20,
-  baño21,
-  baño22,
-  baño23,
+export const imgBano = [
+  bano1,
+  bano4,
+  bano3,
+  bano5,
+  bano6,
+  bano7,
+  bano8,
+  bano9,
+  bano10,
+  bano11,
+  bano12,
+  bano13,
+  bano14,
+  bano15,
+  bano16,
+  bano17,
+  bano18,
+  bano19,
+  bano20,
+  bano21,
+  bano22,
 ];
 
 export const imgCocina = [

@@ -43,7 +43,7 @@ export default class Servicios extends Component {
   render() {
     const { data1, data2, data3, data4 } = this.state;
     return (
-      <div className="background">
+      <div className="background zbackground">
         <div className="marco-row">
           <div className="row-up">
             <Listado title={data2.title} texto={data2.text} img={data2.img} />

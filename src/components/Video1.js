@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import videoinicio from "../assets/video/videoinicio.webm";
+import videoinicio from "../assets/video/videoinicio.mp4";
 import "../assets/css/video.css";
 import { Modal, Button } from "react-bootstrap";
 export default class Video extends Component {
@@ -24,14 +24,13 @@ export default class Video extends Component {
     return (
       <div>
         <video
-          onClick={this.clickHandler.bind(this, videoinicio)}
-          loop
+          // onClick={this.clickHandler.bind(this, videoinicio)}
+          controls
           autoPlay
-          muted
           width="100%"
           height="100%"
           src={videoinicio}
-          type="video/webm"
+          type="video/mp4"
           id={this.props.video}
         ></video>
 

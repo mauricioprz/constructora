@@ -1,11 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  /* font-size: 100%; */
 }
 
 p {
-  font-size: 2.1vmin;
+  font-size: 2.4vmin;
 }
 
 h1 {
@@ -17,7 +16,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.5vmin;
+  font-size: 2.6vmin;
 }
 
 h4 {
@@ -25,15 +24,15 @@ h4 {
 }
 
 h5 {
-  font-size: 2.5vmin;
+  font-size: 2.8vmin;
 }
 
 li {
-  font-size: 2vmin;
+  font-size: 2.4vmin;
 }
 
 a {
-  font-size: 2.6vmin;
+  font-size: 2.8vmin;
 }
 
 button {

@@ -37,7 +37,7 @@ const Carousel = ({ element = "glide", option, children, controls, img }) => {
 
   const nextimg = () => {
     clearInterval(intervalimg.current);
-    if (nexButton.current.attributes["data-disabled"].value == "false") {
+    if (nexButton.current.attributes["data-disabled"].value === "false") {
       nexButton.current.setAttribute("data-disabled", "true");
       setTimeout(() => {
         nexButton.current.setAttribute("data-disabled", "false");
@@ -56,12 +56,12 @@ const Carousel = ({ element = "glide", option, children, controls, img }) => {
 
   const backimg = () => {
     clearInterval(intervalimg.current);
-    if (nexButton.current.attributes["data-disabled"].value == "false") {
+    if (nexButton.current.attributes["data-disabled"].value === "false") {
       nexButton.current.setAttribute("data-disabled", "true");
       setTimeout(() => {
         nexButton.current.setAttribute("data-disabled", "false");
       }, 400);
-      if (numberimg == 0) {
+      if (numberimg === 0) {
         numero = img.length - 1;
         setnumberimg(img.length - 1);
       } else {
@@ -84,8 +84,6 @@ const Carousel = ({ element = "glide", option, children, controls, img }) => {
     slider.go(`=${img}`);
     numero = img + 1;
     setnumberimg(img);
-    autonextImg();
-    console.log("prueba");
   };
 
   return (

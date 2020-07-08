@@ -76,7 +76,7 @@ class Nav extends Component {
             </li>
             <li className="nav-item active">
               <NavLink activeClassName="nav-link" to="/empresaunida">
-                Empresa unida
+                Empresa Comprometida
               </NavLink>
             </li>
             <li className="nav-item active">

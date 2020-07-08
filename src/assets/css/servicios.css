@@ -18,7 +18,7 @@
   justify-content: center;
   align-content: center;
   font-family: "fuente4";
-  font-size: 2.3vmin;
+  font-size: 2.5vmin;
 }
 
 .inv {
@@ -72,5 +72,12 @@
   }
   .row-down {
     flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .zbackground {
+    height: 100vh;
   }
 }

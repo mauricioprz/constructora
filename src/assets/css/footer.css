@@ -69,8 +69,16 @@
 }
 
 .aviso_privacidad {
-  text-align: left;
+  text-align: justify;
+  font-family: fuente2;
 }
+
+.logo-footer {
+  width: 25%;
+  height: auto;
+}
+
+
 
 @media (max-width: 500px) {
   .pie {
@@ -97,4 +105,23 @@
     order: 2;
     width: 100%;
   }
+}
+
+@media (max-width: 500px){
+
+p {
+  font-size: 3.1vmin;
+}
+a {
+font-size: 3.2vmin;
+}
+}
+
+@media (min-width:1024px) {
+  
+  .modal-body{
+overflow-y: scroll;
+height: auto;
+  }
+
 }

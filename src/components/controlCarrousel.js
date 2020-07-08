@@ -77,6 +77,7 @@ export const configParticlesHome = {
       onclick: {
         enable: false,
         mode: "push",
+        
       },
       resize: true,
     },

@@ -6,6 +6,7 @@
 }
 
 .start-left {
+  display: flex;
   margin-right: 25px;
   width: 60%;
   height: 100%;
@@ -61,25 +62,30 @@ h3 {
   text-align: justify;
   padding: 10px;
   font-family: "fuente2";
-  font-size: 2.4vmin;
+  font-size: 2.6vmin;
+  
 }
 
 h1 {
   font-family: "fuente1";
+  font-size: 3.5vmin;
 }
 
 @media (max-width: 768px) {
   .background {
-    height: auto;
-    min-height: 80vh;
+    height: auto; 
+    display: flex;
   }
   .marco {
+    display: flex;
     flex-direction: column;
     width: 100%;
-    height: 62%;
+    height: auto;
   }
   .start-left {
     width: 100%;
+    align-self: auto;
+    display: flex;
   }
   .start-right {
     width: 100%;
@@ -87,4 +93,6 @@ h1 {
   .link {
     padding: 2px 0 0 0;
   }
+  
 }
+

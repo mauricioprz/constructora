@@ -1,0 +1,33 @@
+.image-collage {
+     display: contents;
+}
+
+.collageh {
+     width: auto;
+     height: 100%;
+     padding: 17px 0;
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+     margin: 20px 20px;
+}
+
+.collagev {
+     display: none;
+}
+@media (max-width: 500px) {
+     .image-collage {
+          display: flex;
+          height: 100%;
+          padding: 10px 6px;
+     }
+
+.collageh {
+     display: none;
+}
+
+.collagev {
+     display: flex;
+}
+}
+
