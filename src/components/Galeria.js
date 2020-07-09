@@ -42,7 +42,7 @@ export default class Galeria extends Component {
       <div className="background gback">
         <div className="marco gmarco">
           <div className="galeria-left">
-            <div className="video1">
+            <div className="video2">
               <Video />
             </div>
           </div>

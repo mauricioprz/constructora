@@ -11,7 +11,7 @@ export default class Video extends Component {
   };
 
   clickHandler = (e, data) => {
-    data.currentTarget.pause();
+    data.currentTarget.play();
     this.setState({ show: true, autoPlay: true});
   };
 
