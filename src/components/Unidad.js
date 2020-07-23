@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Collage from "../assets/images/empresa_comprometida/collagehorizontal.jpg";
-import Collage2 from "../assets/images/empresa_comprometida/collagevertical.png";
+import Collage2 from "../assets/images/empresa_comprometida/collagevertical.jpg";
 import "../assets/css/empresa.css";
 export default class Unidad extends Component {
   render() {

@@ -79,6 +79,13 @@ const Carousel = ({ element = "glide", option, children, controls, img }) => {
     autonextImg();
   };
 
+  const selecimg = (img, e) => {
+    clearInterval(intervalimg.current);
+    slider.go(`=${img}`);
+    numero = img + 1;
+    setnumberimg(img);
+  };
+
   return (
     <Fragment>
       <div className="imagesVista">
@@ -92,6 +99,7 @@ const Carousel = ({ element = "glide", option, children, controls, img }) => {
                 key: key,
                 className: `glide__slide centerCarrousel`,
                 "data-key": key,
+                onClick: selecimg.bind(this, key),
               });
             })}
           </ul>

@@ -5,11 +5,15 @@ import "../assets/css/video.css";
 export default class Video extends Component {
   render() {
     return (
-      
-      <video className="video-size" typeof="video/mp4" controls autoPlay >
+      <video
+        id="videog"
+        className="video-size"
+        typeof="video/mp4"
+        controls
+        autoPlay
+      >
         <source src={remconvideo} />
       </video>
-      
     );
   }
 }
