@@ -9,14 +9,14 @@ export default class Inicio extends Component {
   state = {
     dclass: "background",
   };
-
+//cambios2
   render() {
     return (
-      <div className={this.state.dclass}>
+      <div className="background">
         <div className="marco">
           <div className="start-left">
             <div className="video1">
-              <VideoInicio video="videoIn" />
+              <VideoInicio />
             </div>
           </div>
           <div className="start-right">
