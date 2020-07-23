@@ -9,7 +9,7 @@ export default class Inicio extends Component {
   state = {
     dclass: "background",
   };
-
+//cambios
   render() {
     return (
       <div className={this.state.dclass}>
