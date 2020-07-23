@@ -4,16 +4,14 @@ body {
 }
 
 p {
-  font-size: 2.4vmin;
+  font-size: 2.3vmin;
 }
 
-h1 {
-  font-size: 2.8vw;
-}
 
-h2 {
-  font-size: 4vmin;
-}
+
+/* h2 {
+  font-size: vmin;
+} */
 
 h3 {
   font-size: 2.6vmin;
@@ -32,7 +30,7 @@ li {
 }
 
 a {
-  font-size: 2.8vmin;
+  font-size: 3.1vmin;
 }
 
 button {

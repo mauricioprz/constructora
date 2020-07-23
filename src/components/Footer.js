@@ -29,7 +29,7 @@ export default class Footer extends Component {
         <div className="aviso">
           <div className="children-aviso">
             <p>2015 Remcon Todos los derechos reservados</p>
-            <Link onClick={this.clickHandler.bind(this)} to="#">
+            <Link className="private" onClick={this.clickHandler.bind(this)} to="#">
               Aviso de Privacidad
             </Link>
           </div>

@@ -23,7 +23,7 @@ export default class Cascos extends Component {
         <div className="marco-casco2">
           {/* <img className="tamaño2" src={CascoCentral} alt="Imagen de casco" /> */}
           <div className="casco-txt2">
-            <h5 className="title-casco1">VISION</h5>
+            <h5 className="title-casco2">VISION</h5>
             <p className="comentarios2">
               Ser empresa líder de la construcción, buscando soluciones
               efectivas para conservar, renovar y aumentar el patrimonio de las

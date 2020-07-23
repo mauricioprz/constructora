@@ -13,10 +13,15 @@
   align-items: center;
   align-content: center;
   justify-content: center;
+  
 }
 
+.private {
+  font-size: 1.2rem;
+}
 .aviso p {
   margin: 0;
+  
 }
 
 .icon-social {
@@ -71,13 +76,14 @@
 .aviso_privacidad {
   text-align: justify;
   font-family: fuente2;
+  
 }
 
 .logo-footer {
   width: 25%;
   height: auto;
 }
-
+ 
 
 
 @media (max-width: 500px) {
@@ -94,6 +100,7 @@
   .children-aviso {
     display: flex;
     flex-direction: column-reverse;
+    
   }
 
   .icon-social {
@@ -105,6 +112,8 @@
     order: 2;
     width: 100%;
   }
+
+  
 }
 
 @media (max-width: 500px){
@@ -115,6 +124,9 @@ p {
 a {
 font-size: 3.2vmin;
 }
+.private {
+  font-size: 1rem;
+}
 }
 
 @media (min-width:1024px) {
@@ -123,5 +135,5 @@ font-size: 3.2vmin;
 overflow-y: scroll;
 height: auto;
   }
-
+  
 }
