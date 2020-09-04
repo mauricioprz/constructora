@@ -172,6 +172,7 @@
     /* grid-template-rows: repeat(1, 1fr); */
     align-items: center;
     justify-content: initial;
+    margin-top: 35px;
   }
   .cascos_container > div:nth-child(1) {
     /* margin-bottom: 5px; */
@@ -213,7 +214,7 @@
     position: relative;
     display: block;
     justify-content: baseline;
-    width: 100%;
+    width: 95%;
     align-self: auto;
   }
   .casco-txt1 {
@@ -226,7 +227,7 @@
   .casco-txt2 {
     display: flex;
     /* flex-direction: column; */
-    width: 100%;
+    width: 95%;
     /* height: 80%; */
     align-items: center;
   }
@@ -239,6 +240,7 @@
     display: block;
     justify-content: baseline;
     align-self: auto;
+    width: 95%;
   }
   .title-casco2 {
     display: flex;
@@ -267,7 +269,7 @@
     position: relative;
     display: block;
     justify-content: baseline;
-    width: 100%;
+    width: 95%;
     height: 100%;
     align-self: auto;
   }
@@ -315,6 +317,9 @@
 @media (max-width: 768px){
   .imagen_de_noche {
     width: auto;
+    /* height: 65%; */
+    /* opacity: 65%; */
+    padding: 40px 0;
   }
   .comentarios1{
     width: auto;

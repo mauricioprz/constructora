@@ -92,9 +92,10 @@
   }
 
   .imagesVista > img {
-    width: 75vmin;
-    height: 85vmin;
-    
+    /* width: 75vmin; */
+    /* height: 85vmin; */
+    width: 100%;
+    height: auto;
   }
 
   .modalLarge > div {
