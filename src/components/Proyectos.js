@@ -15,9 +15,6 @@ export default class Proyectos extends Component {
   };
 
   clickHandler = (e, data) => {
-    console.log(e);
-    console.log(data);
-    console.log("se hizo click");
     this.setState({ show: true, Mtitle: e.title, img: e.img });
   };
 

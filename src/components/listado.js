@@ -5,7 +5,7 @@ import { isUndefined } from "lodash";
 export default class Listado extends Component {
   render() {
     const { title, texto, img, classRow } = this.props;
-    console.log(classRow);
+
     return (
       <div className={`row-container ${isUndefined(classRow) ? "" : classRow}`}>
         <div className="row-containerlistado">

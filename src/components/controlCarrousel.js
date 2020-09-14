@@ -77,7 +77,6 @@ export const configParticlesHome = {
       onclick: {
         enable: false,
         mode: "push",
-        
       },
       resize: true,
     },
@@ -122,7 +121,7 @@ export const settingsCarousel_sistemas = {
   gap: 30,
   breakpoints: {
     600: {
-      perView: 1,
+      perView: 3,
     },
     1024: {
       perView: 2,

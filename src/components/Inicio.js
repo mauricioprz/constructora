@@ -6,7 +6,6 @@ import VideoInicio from "./Video1";
 import { Link } from "react-router-dom";
 
 export default class Inicio extends Component {
-  
   render() {
     return (
       <div className="background">

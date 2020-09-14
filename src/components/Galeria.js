@@ -35,14 +35,17 @@ export default class Galeria extends Component {
     document.getElementById("videog").play();
   };
 
-  img = () => {};
-
   render() {
     return (
       <div className="background gback">
         <div className="marco gmarco">
-          <div className="galeria-left">
-            <div className="video2">
+          <div
+            className="galeria-left"
+            onClick={() => {
+              console.log("object");
+            }}
+          >
+            <div className="video2" id="video">
               <Video />
             </div>
           </div>

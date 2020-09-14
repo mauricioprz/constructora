@@ -1,3 +1,4 @@
+import { cond } from "lodash";
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "../assets/css/navegacion.css";
@@ -14,6 +15,29 @@ class Nav extends Component {
   toggleNavbar() {
     this.setState({
       collapsed: !this.state.collapsed,
+    });
+  }
+  componentDidMount() {
+    let p = false;
+    let nav = false;
+    window.addEventListener("click", (event) => {
+      let menu = document.getElementById("navbarResponsive");
+      let navb = document.getElementById("btnav");
+      event.path.map((element, key) => {
+        if (element == menu) {
+          p = true;
+        }
+        if (element == navb) {
+          nav = true;
+        }
+      });
+
+      if (!p && !nav && menu.classList.contains("show")) {
+        this.toggleNavbar();
+      }
+
+      p = false;
+      nav = false;
     });
   }
   render() {
@@ -44,6 +68,7 @@ class Nav extends Component {
           aria-controls="navbarResponsive"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          id="btnav"
         >
           <span className="navbar-toggler-icon" />
         </button>
