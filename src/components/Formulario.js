@@ -47,7 +47,7 @@ class Formulario extends Component {
       phone: this.inputPhone.value,
       message: this.textAreaMessage.value,
     };
-    if (params.name && params.email && params.message) {
+    if (params.name && params.email && params.message && params.phone) {
       firebaseConf
         .database()
         .ref("form")
