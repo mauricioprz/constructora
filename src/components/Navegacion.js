@@ -75,37 +75,37 @@ class Nav extends Component {
         <div className={`${classOne}`} id="navbarResponsive">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <NavLink activeClassName="nav-link" exact to="/">
+              <NavLink activeClassName="nav-link" exact to="/" onClick={this.toggleNavbar} >
                 Inicio
               </NavLink>
             </li>
             <li className="nav-item active">
-              <NavLink activeClassName="nav-link" to="/nosotros">
+              <NavLink activeClassName="nav-link" to="/nosotros" onClick={this.toggleNavbar}>
                 Nosotros
               </NavLink>
             </li>
             <li className="nav-item active">
-              <NavLink activeClassName="nav-link" to="/servicios">
+              <NavLink activeClassName="nav-link" to="/servicios" onClick={this.toggleNavbar}>
                 Servicios
               </NavLink>
             </li>
             <li className="nav-item active">
-              <NavLink activeClassName="nav-link" to="/proyectos">
+              <NavLink activeClassName="nav-link" to="/proyectos" onClick={this.toggleNavbar}>
                 Proyectos
               </NavLink>
             </li>
             <li className="nav-item active">
-              <NavLink activeClassName="nav-link" to="/galeria">
+              <NavLink activeClassName="nav-link" to="/galeria" onClick={this.toggleNavbar}>
                 Galeria
               </NavLink>
             </li>
             <li className="nav-item active">
-              <NavLink activeClassName="nav-link" to="/empresaunida">
+              <NavLink activeClassName="nav-link" to="/empresaunida" onClick={this.toggleNavbar}>
                 Empresa Comprometida
               </NavLink>
             </li>
             <li className="nav-item active">
-              <NavLink activeClassName="nav-link" to="/contacto">
+              <NavLink activeClassName="nav-link" to="/contacto" onClick={this.toggleNavbar}>
                 Contacto
               </NavLink>
             </li>
